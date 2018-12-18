@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ContextType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" confirmationNeeded="false" name="Default" xmi:id="_B80iQAKuEemcQ5w2Ifg-kg" xmi:version="2.0">
+  <contextParameter comment="" name="Penton_proxy_host" prompt="Penton_proxy_host?" promptNeeded="false" type="id_String" value="" xmi:id="_B80iQQKuEemcQ5w2Ifg-kg"/>
+  <contextParameter comment="" name="Penton_oauth_tokenFile" prompt="Penton_oauth_tokenFile?" promptNeeded="false" type="id_String" value="" xmi:id="_B80iQgKuEemcQ5w2Ifg-kg"/>
+  <contextParameter comment="" name="Penton_proxy_userPassword_userId" prompt="Penton_proxy_userPassword_userId?" promptNeeded="false" type="id_String" value="" xmi:id="_B80iQwKuEemcQ5w2Ifg-kg"/>
+  <contextParameter comment="" name="Penton_oauth_clientSecret" prompt="Penton_oauth_clientSecret?" promptNeeded="false" type="id_Password" value="" xmi:id="_B80iRAKuEemcQ5w2Ifg-kg"/>
+  <contextParameter comment="" name="Penton_proxy_port" prompt="Penton_proxy_port?" promptNeeded="false" type="id_Integer" value="" xmi:id="_B80iRQKuEemcQ5w2Ifg-kg"/>
+  <contextParameter comment="" name="Penton_apiVersion" prompt="Penton_apiVersion?" promptNeeded="false" type="id_String" value="37.0" xmi:id="_B80iRgKuEemcQ5w2Ifg-kg"/>
+  <contextParameter comment="" name="Penton_oauth_callbackHost" prompt="Penton_oauth_callbackHost?" promptNeeded="false" type="id_String" value="" xmi:id="_B80iRwKuEemcQ5w2Ifg-kg"/>
+  <contextParameter comment="" name="Penton_clientId" prompt="Penton_clientId?" promptNeeded="false" type="id_String" value="" xmi:id="_B80iSAKuEemcQ5w2Ifg-kg"/>
+  <contextParameter comment="" name="Penton_oauth_callbackPort" prompt="Penton_oauth_callbackPort?" promptNeeded="false" type="id_Integer" value="" xmi:id="_B80iSQKuEemcQ5w2Ifg-kg"/>
+  <contextParameter comment="" name="Penton_userPassword_password" prompt="Penton_userPassword_password?" promptNeeded="false" type="id_Password" value="nnSuU05bGDVz7skoqG37TQ==" xmi:id="_B80iSgKuEemcQ5w2Ifg-kg"/>
+  <contextParameter comment="" name="Penton_timeout" prompt="Penton_timeout?" promptNeeded="false" type="id_Integer" value="60000" xmi:id="_B80iSwKuEemcQ5w2Ifg-kg"/>
+  <contextParameter comment="" name="Penton_oauth_clientId" prompt="Penton_oauth_clientId?" promptNeeded="false" type="id_String" value="" xmi:id="_B80iTAKuEemcQ5w2Ifg-kg"/>
+  <contextParameter comment="" name="Penton_proxy_userPassword_password" prompt="Penton_proxy_userPassword_password?" promptNeeded="false" type="id_Password" value="" xmi:id="_B80iTQKuEemcQ5w2Ifg-kg"/>
+  <contextParameter comment="" name="Penton_userPassword_userId" prompt="Penton_userPassword_userId?" promptNeeded="false" type="id_String" value="puneet.taneja@penton.com" xmi:id="_B80iTgKuEemcQ5w2Ifg-kg"/>
+  <contextParameter comment="" name="Penton_sessionDirectory" prompt="Penton_sessionDirectory?" promptNeeded="false" type="id_String" value="" xmi:id="_B80iTwKuEemcQ5w2Ifg-kg"/>
+  <contextParameter comment="" name="Penton_userPassword_securityKey" prompt="Penton_userPassword_securityKey?" promptNeeded="false" type="id_Password" value="PxZx0DcZhdq1iR+nfVm704p+PKdsRTmWLLW6TnjNR48=" xmi:id="_B80iUAKuEemcQ5w2Ifg-kg"/>
+  <contextParameter comment="" name="Penton_endpoint" prompt="Penton_endpoint?" promptNeeded="false" type="id_String" value="https://www.salesforce.com/services/Soap/u/37.0" xmi:id="_B80iUQKuEemcQ5w2Ifg-kg"/>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_0c8b0d8c-0d2f-42a8-85d0-a6fb830d6113"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>cz50OvvRpPYF/ajl+Xy+J0pjZ/Q7HbGcWXqO18i2/yFFfnv5YdZUI01SswgOQrcwm7tgBzf4C5rW
+N+iGFwl9ew==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_2e891aec-ebed-4e3a-953b-6b9a75e85b21"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>0tPrJRsJAZ1R4Imvc13AxJmAIa4OexdtHdkjX/oJOCZT4P8W1u8rFAACJJzyEDh8WO5biriQzdmn
+hBJFuTVLbw==</DigestValue></Reference></SignedInfo><SignatureValue>BXnmDlOUj7RHoEcxXBa5rh12Jr4RqtggehzBAVihfozynTq2BWljBJ8sHXHJsoZvHJSPU9G1UVcJ
+ppzwXTjwxJdPftHjOTCb1uPUcOPFn+o7OCunJMQvrCXzpAIvxjb+11hC6xdqqyVsH3rVAi8GokQ8
+2U2RmQxRIu94SGbEIkV9CGX3vDaFs4rBjFRPInbI7/SgxpVzm3Yo9/VkX//NJ9Nf7Y1lygDvhGSt
+hbTF2HLm9pyCIkznEmetIxsEWNzmow2Min0Ixx0o7tLpkZ4zNA65OdN3/UyRE+RblUtKvfuMvkVl
+/ZUh396gK5gSK6tzurlvL6BAG4AUiN23amxqVg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
+RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
+LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
+VQQIDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1ImRDEpMCcGA1UEAwwg
+RGVmYXVsdCBjb2RlLXNpZ25pbmcgY2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+ggEKAoIBAQDiCz1II/o6hDUWu/ygxTCT2o/fYxVzPW23AoONQC/Vuiqh0COyLIgaMTjBPmQdTQFq
+rmM5tD64gi4TEQF+Z3iYt3daLdQUfaW9SzaMlY+XVNz5xnMBVDuiSHJSFE9lKnhgbKAHvOeoJo46
+UgWwb1za0WpRckDtjKcntwEK1orZCgrcIo1nDvFXyB5n0KfpLyktEOa0bSHde50MPbvQeB66XlEb
+lhjfs5S9WnAUja9RgqdwqZoI0ss+x/pjkQygDT8f17MktM21HOtg09lJlhMGJckhgD7jUF5tfYGM
+sv/O27g5CToFhxOnutDtsrDw7AkEQIml8KJp97bQLAFlLnh1AgMBAAGjge0wgeowHQYDVR0OBBYE
+FFzdy6ZfpUX8JwkM/SUrqkwLNqWAMB8GA1UdIwQYMBaAFOd9C3L8tYGZxoAr2SzsgnMytaj3MAsG
+A1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAJBgNVHRMEAjAAMHsGCWCGSAGG+EIBDQRu
+FmxEZWZhdWx0IHRoaXJkIHBhcnR5IGNvZGUtc2lnbmluZyBjZXJ0aWZpY2F0ZS4gTm8gY29tbWl0
+bWVudCBpcyBtYWRlIG9uIHRoZSBjb250ZW50IHNpZ25lZCBieSB0aGUgdGhpcmQgcGFydHkwDQYJ
+KoZIhvcNAQELBQADggIBAKzYdnzoFgrRtDLSSzWtwuOrGo5+1RPoDHm/1dlbVnB7oZzUwfRGwZT5
+ser0V7OZyt9wWR8iQ2ka30fHWrNAosNtlIkF88s5YZw7OOIMxR+qYA99BnWLa79DZVIuukI2f5qJ
+Cr9nw6Oygo8CWeNMWhtXcvV4gqROhb2QMBrvWBw9QvNK1XMdtPShfWiXwyPzzRKgwqrN2meXtOY3
+S+MXu6u+RUD9EYeElp9M+9Yp+zRySl5/s+0sbvo7qz369dlsw8XhKXT+s4YQQe3Sx14Kg3SDFXKn
+QcVgycaZMOw4YUxOeP2hKOHnNuOMORfu3qlYkN/0RMGjn6r4PU4+yL276TiWI5b8J06y4leng2as
+r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
+EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
+BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
+6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_2e891aec-ebed-4e3a-953b-6b9a75e85b21" Target="#_0c8b0d8c-0d2f-42a8-85d0-a6fb830d6113"><Timestamp>2018-12-18 10:16:49</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ContextType>

@@ -1,0 +1,368 @@
+package routines;
+
+import java.util.List;
+//import com.google.api.client.json.jackson2.JacksonFactory;
+//import com.google.api.client.*;
+//import com.google.api.services.bigquery.*;
+
+public class gs_to_Bigquery {
+
+    /**
+     * @throws Exception 
+     */
+    public static void insertIntoBigQuery(String message) throws Exception {  	
+    	
+    	/**
+		 * [BigQueryOutput_1_BQBE begin ] start
+		 */
+
+		
+    	StringBuilder BigQueryOutput_1_BQBE = new StringBuilder();
+		BigQueryOutput_1_BQBE.append("Parameters:");
+		BigQueryOutput_1_BQBE
+				.append("CLIENT_ID"
+						+ " = "
+						+ "\"914149727637-csmbqtar2lg3q2m5bvv0c1c4gng6aagu.apps.googleusercontent.com\"");
+		BigQueryOutput_1_BQBE.append(" | ");
+		BigQueryOutput_1_BQBE
+				.append("CLIENT_SECRET"
+						+ " = "
+						+ String.valueOf(
+								"b2801855dda4cb34cf176ea769e064a522e2af701c7d88eff4f7aba1746784ea")
+								.substring(0, 4) + "...");
+		BigQueryOutput_1_BQBE.append(" | ");
+		BigQueryOutput_1_BQBE.append("PROJECT_ID"
+				+ " = " + "\"mytalendproject-220908:asia-northeast1\"");
+		BigQueryOutput_1_BQBE.append(" | ");
+		BigQueryOutput_1_BQBE
+				.append("AUTHORIZATION_CODE"
+						+ " = "
+						+ "\"4/lACUQ1Vepe1oWDGN70coOEgGPCx9fTH4TN70EPlfXk9KuI1Rh2Lnrsc\"");
+		BigQueryOutput_1_BQBE.append(" | ");
+		BigQueryOutput_1_BQBE.append("DATASET" + " = "
+				+ "\"BELKDATA\"");
+		BigQueryOutput_1_BQBE.append(" | ");
+		BigQueryOutput_1_BQBE.append("TABLE" + " = "
+				+ "\"temp\"");
+		BigQueryOutput_1_BQBE.append(" | ");
+		BigQueryOutput_1_BQBE
+				.append("CREATE_TABLE_IF_NOT_EXIST" + " = " + "true");
+		BigQueryOutput_1_BQBE.append(" | ");
+		BigQueryOutput_1_BQBE.append("ACTION_ON_DATA"
+				+ " = " + "APPEND");
+		BigQueryOutput_1_BQBE.append(" | ");
+		BigQueryOutput_1_BQBE
+				.append("BULK_FILE_ALREADY_EXIST" + " = " + "false");
+		BigQueryOutput_1_BQBE.append(" | ");
+		BigQueryOutput_1_BQBE.append("GS_ACCESS_KEY"
+				+ " = " + "\"GOOG3NOEQ327ASKPMZWXPNUU\"");
+		BigQueryOutput_1_BQBE.append(" | ");
+		BigQueryOutput_1_BQBE
+				.append("GS_SECRET_KEY"
+						+ " = "
+						+ String.valueOf(
+								"b7cde237a17c57d4bb0f26a4bf01b887e8019c8415b13f1a1977f1ab0e0837be4c97e91390e04e14f4f7aba1746784ea")
+								.substring(0, 4) + "...");
+		BigQueryOutput_1_BQBE.append(" | ");
+		BigQueryOutput_1_BQBE
+				.append("GS_LOCAL_FILE"
+						+ " = "
+						+ "\"D:/workInProgress/TalendExecutionServer/log/abc2.csv\"");
+		BigQueryOutput_1_BQBE.append(" | ");
+		BigQueryOutput_1_BQBE.append("GS_FILE" + " = "
+				+ "\"gs://kailash/talend/abc2.csv\"");
+		BigQueryOutput_1_BQBE.append(" | ");
+		BigQueryOutput_1_BQBE.append("GS_FILE_HEADER"
+				+ " = " + "1");
+		BigQueryOutput_1_BQBE.append(" | ");
+		BigQueryOutput_1_BQBE.append("DIE_ON_ERROR"
+				+ " = " + "false");
+		BigQueryOutput_1_BQBE.append(" | ");
+		BigQueryOutput_1_BQBE.append("TOKEN_NAME"
+				+ " = "
+				+ "\"D:/workInProgress/TalendExecutionServer/log/token.properties\"");
+		BigQueryOutput_1_BQBE.append(" | ");
+		BigQueryOutput_1_BQBE
+				.append("SET_FIELD_DELIMITER" + " = " + "true");
+		BigQueryOutput_1_BQBE.append(" | ");
+		BigQueryOutput_1_BQBE.append("FIELD_DELIMITER"
+				+ " = " + "\",\"");
+		BigQueryOutput_1_BQBE.append(" | ");
+		BigQueryOutput_1_BQBE.append("ENCODING"
+				+ " = " + "\"UTF-8\"");
+		BigQueryOutput_1_BQBE.append(" | ");
+		
+
+		final String CLIENT_ID_BigQueryOutput_1_BQBE = "914149727637-csmbqtar2lg3q2m5bvv0c1c4gng6aagu.apps.googleusercontent.com";
+
+		final String decryptedPassword_BigQueryOutput_1_BQBE = routines.system.PasswordEncryptUtil
+				.decryptPassword("b2801855dda4cb34cf176ea769e064a522e2af701c7d88eff4f7aba1746784ea");
+
+		final String CLIENT_SECRET_BigQueryOutput_1_BQBE = "{\"web\": {\"client_id\": \""
+				+ "914149727637-csmbqtar2lg3q2m5bvv0c1c4gng6aagu.apps.googleusercontent.com"
+				+ "\",\"client_secret\": \""
+				+ decryptedPassword_BigQueryOutput_1_BQBE
+				+ "\",\"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\"token_uri\": \"https://accounts.google.com/o/oauth2/token\"}}";
+		final String PROJECT_ID_BigQueryOutput_1_BQBE = "mytalendproject-220908";
+
+		// Static variables for API scope, callback URI, and HTTP/JSON
+		// functions
+		final List<String> SCOPES_BigQueryOutput_1_BQBE = java.util.Arrays
+				.asList("https://www.googleapis.com/auth/bigquery");
+		final String REDIRECT_URI_BigQueryOutput_1_BQBE = "urn:ietf:wg:oauth:2.0:oob";
+		final com.google.api.client.http.HttpTransport TRANSPORT_BigQueryOutput_1_BQBE = new com.google.api.client.http.javanet.NetHttpTransport();
+		final com.google.api.client.json.JsonFactory JSON_FACTORY_BigQueryOutput_1_BQBE = new com.google.api.client.json.jackson2.JacksonFactory();
+
+		com.google.api.client.googleapis.auth.oauth2.GoogleClientSecrets clientSecrets_BigQueryOutput_1_BQBE = com.google.api.client.googleapis.auth.oauth2.GoogleClientSecrets
+				.load(new com.google.api.client.json.jackson2.JacksonFactory(),
+						new java.io.InputStreamReader(
+								new java.io.ByteArrayInputStream(
+										CLIENT_SECRET_BigQueryOutput_1_BQBE
+												.getBytes())));
+
+		com.google.api.client.googleapis.auth.oauth2.GoogleAuthorizationCodeFlow flow_BigQueryOutput_1_BQBE = null;
+		com.google.api.services.bigquery.Bigquery bigqueryclient_BigQueryOutput_1_BQBE = null;
+		long nb_line_BigQueryOutput_1_BQBE = 0;
+
+		System.out.println("BigQueryOutput_1_BQBE - Service Account Scopes [https://www.googleapis.com/auth/bigquery]");
+		System.out.println("BigQueryOutput_1_BQBE - Redirect uris [urn:ietf:wg:oauth:2.0:oob]");
+		System.out.println("BigQueryOutput_1_BQBE - Attempt to load existing refresh token");
+
+		// Attempt to load existing refresh token
+		String tokenFile_BigQueryOutput_1_BQBE = "D:/workInProgress/TalendExecutionServer/log/token.properties";
+		java.util.Properties properties_BigQueryOutput_1_BQBE = new java.util.Properties();
+		try {
+			java.io.FileInputStream inputStream_BigQueryOutput_1_BQBE = new java.io.FileInputStream(
+					tokenFile_BigQueryOutput_1_BQBE);
+			properties_BigQueryOutput_1_BQBE
+					.load(inputStream_BigQueryOutput_1_BQBE);
+			inputStream_BigQueryOutput_1_BQBE.close();
+		} catch (java.io.FileNotFoundException e_BigQueryOutput_1_BQBE) {
+
+			System.out.println("BigQueryOutput_1_BQBE - "
+					+ e_BigQueryOutput_1_BQBE.getMessage());
+
+		} catch (java.io.IOException ee_BigQueryOutput_1_BQBE) {
+
+			System.out.println("BigQueryOutput_1_BQBE - "
+					+ ee_BigQueryOutput_1_BQBE.getMessage());
+
+		}
+		String storedRefreshToken_BigQueryOutput_1_BQBE = (String) properties_BigQueryOutput_1_BQBE
+				.get("refreshtoken");
+
+		// Check to see if the an existing refresh token was loaded.
+		// If so, create a credential and call refreshToken() to get a
+		// new
+		// access token.
+		if (storedRefreshToken_BigQueryOutput_1_BQBE != null) {
+			// Request a new Access token using the refresh token.
+			com.google.api.client.googleapis.auth.oauth2.GoogleCredential credential_BigQueryOutput_1_BQBE = new com.google.api.client.googleapis.auth.oauth2.GoogleCredential.Builder()
+					.setTransport(TRANSPORT_BigQueryOutput_1_BQBE)
+					.setJsonFactory(
+							JSON_FACTORY_BigQueryOutput_1_BQBE)
+					.setClientSecrets(
+							clientSecrets_BigQueryOutput_1_BQBE)
+					.build()
+					.setFromTokenResponse(
+							new com.google.api.client.auth.oauth2.TokenResponse()
+									.setRefreshToken(storedRefreshToken_BigQueryOutput_1_BQBE));
+
+			credential_BigQueryOutput_1_BQBE.refreshToken();
+
+			System.out.println("BigQueryOutput_1_BQBE - An existing refresh token was loaded.");
+
+			bigqueryclient_BigQueryOutput_1_BQBE = new com.google.api.services.bigquery.Bigquery.Builder(
+					new com.google.api.client.http.javanet.NetHttpTransport(),
+					new com.google.api.client.json.jackson2.JacksonFactory(),
+					credential_BigQueryOutput_1_BQBE)
+					.setApplicationName("Talend").build();
+		} else {
+
+			System.out.println("BigQueryOutput_1_BQBE - The refresh token does not exist.");
+
+			String authorizationCode_BigQueryOutput_1_BQBE = "4/lACUQ1Vepe1oWDGN70coOEgGPCx9fTH4TN70EPlfXk9KuI1Rh2Lnrsc";
+			if (authorizationCode_BigQueryOutput_1_BQBE == null
+					|| "".equals(authorizationCode_BigQueryOutput_1_BQBE)
+					|| "\"\""
+							.equals(authorizationCode_BigQueryOutput_1_BQBE)) {
+				String authorizeUrl_BigQueryOutput_1_BQBE = new com.google.api.client.googleapis.auth.oauth2.GoogleAuthorizationCodeRequestUrl(
+						clientSecrets_BigQueryOutput_1_BQBE,
+						REDIRECT_URI_BigQueryOutput_1_BQBE,
+						SCOPES_BigQueryOutput_1_BQBE).setState("")
+						.build();
+
+				System.out.println("BigQueryOutput_1_BQBE - Paste this URL into a web browser to authorize BigQuery Access:\n"
+						+ authorizeUrl_BigQueryOutput_1_BQBE);
+
+				System.out
+						.println("Paste this URL into a web browser to authorize BigQuery Access:\n"
+								+ authorizeUrl_BigQueryOutput_1_BQBE);
+				throw new java.lang.Exception(
+						"Authorization Code error");
+			} else {
+
+				System.out.println("BigQueryOutput_1_BQBE - Exchange the auth code for an access token and refesh token.");
+
+				// Exchange the auth code for an access token and refesh
+				// token
+				if (flow_BigQueryOutput_1_BQBE == null) {
+					flow_BigQueryOutput_1_BQBE = new com.google.api.client.googleapis.auth.oauth2.GoogleAuthorizationCodeFlow.Builder(
+							new com.google.api.client.http.javanet.NetHttpTransport(),
+							new com.google.api.client.json.jackson2.JacksonFactory(),
+							clientSecrets_BigQueryOutput_1_BQBE,
+							SCOPES_BigQueryOutput_1_BQBE)
+							.setAccessType("offline")
+							.setApprovalPrompt("force").build();
+				}
+				com.google.api.client.googleapis.auth.oauth2.GoogleTokenResponse response_BigQueryOutput_1_BQBE = flow_BigQueryOutput_1_BQBE
+						.newTokenRequest(
+								authorizationCode_BigQueryOutput_1_BQBE)
+						.setRedirectUri(
+								REDIRECT_URI_BigQueryOutput_1_BQBE)
+						.execute();
+				com.google.api.client.auth.oauth2.Credential credential_BigQueryOutput_1_BQBE = flow_BigQueryOutput_1_BQBE
+						.createAndStoreCredential(
+								response_BigQueryOutput_1_BQBE, null);
+
+				System.out.println("BigQueryOutput_1_BQBE - Store the refresh token for future use.");
+
+				// Store the refresh token for future use.
+				java.util.Properties storeProperties_BigQueryOutput_1_BQBE = new java.util.Properties();
+				storeProperties_BigQueryOutput_1_BQBE.setProperty(
+						"refreshtoken",
+						credential_BigQueryOutput_1_BQBE
+								.getRefreshToken());
+				java.io.FileOutputStream outputStream_BigQueryOutput_1_BQBE = new java.io.FileOutputStream(
+						tokenFile_BigQueryOutput_1_BQBE);
+				storeProperties_BigQueryOutput_1_BQBE.store(
+						outputStream_BigQueryOutput_1_BQBE, null);
+				if (outputStream_BigQueryOutput_1_BQBE != null) {
+					outputStream_BigQueryOutput_1_BQBE.close();
+				}
+
+				bigqueryclient_BigQueryOutput_1_BQBE = new com.google.api.services.bigquery.Bigquery.Builder(
+						new com.google.api.client.http.javanet.NetHttpTransport(),
+						new com.google.api.client.json.jackson2.JacksonFactory(),
+						credential_BigQueryOutput_1_BQBE).build();
+			}
+		}
+
+		/* -------------------------------------- */
+
+		final String decryptedPwd_BigQueryOutput_1_BQBE = routines.system.PasswordEncryptUtil
+				.decryptPassword("b7cde237a17c57d4bb0f26a4bf01b887e8019c8415b13f1a1977f1ab0e0837be4c97e91390e04e14f4f7aba1746784ea");
+
+		org.jets3t.service.security.GSCredentials gsCredentials_BigQueryOutput_1_BQBE = new org.jets3t.service.security.GSCredentials(
+				"GOOG3NOEQ327ASKPMZWXPNUU",
+				decryptedPwd_BigQueryOutput_1_BQBE);
+
+		org.jets3t.service.impl.rest.httpclient.GoogleStorageService gsService_BigQueryOutput_1_BQBE = 
+				new org.jets3t.service.impl.rest.httpclient.GoogleStorageService(
+				gsCredentials_BigQueryOutput_1_BQBE);
+
+//		System.out.println("BigQueryOutput_1_BQBE - Starting build a job.");
+
+		com.google.api.services.bigquery.model.Job job_BigQueryOutput_1_BQBE = new com.google.api.services.bigquery.model.Job();
+		job_BigQueryOutput_1_BQBE
+				.setJobReference(new com.google.api.services.bigquery.model.JobReference()
+						.setProjectId(PROJECT_ID_BigQueryOutput_1_BQBE));
+
+		com.google.api.services.bigquery.model.JobConfiguration config_BigQueryOutput_1_BQBE = new com.google.api.services.bigquery.model.JobConfiguration();
+		com.google.api.services.bigquery.model.JobConfigurationLoad queryLoad_BigQueryOutput_1_BQBE = new com.google.api.services.bigquery.model.JobConfigurationLoad();
+		com.google.api.services.bigquery.model.TableSchema schema_BigQueryOutput_1_BQBE = new com.google.api.services.bigquery.model.TableSchema();
+
+		System.out.println("BigQueryOutput_1_BQBE - Table field schema:");
+
+		java.util.List<com.google.api.services.bigquery.model.TableFieldSchema> fields_BigQueryOutput_1_BQBE = new java.util.ArrayList<com.google.api.services.bigquery.model.TableFieldSchema>();
+//add table schema values here
+		com.google.api.services.bigquery.model.TableFieldSchema col1_BigQueryOutput_1_BQBE = new com.google.api.services.bigquery.model.TableFieldSchema();
+		col1_BigQueryOutput_1_BQBE.setName("col1");
+		col1_BigQueryOutput_1_BQBE.setType("string");
+		fields_BigQueryOutput_1_BQBE
+				.add(col1_BigQueryOutput_1_BQBE);
+
+	//	log.debug("BigQueryOutput_1_BQBE - Field index[0] {\"name\":\"col1\",\"type\":\"string\"}");
+
+		com.google.api.services.bigquery.model.TableFieldSchema col2_BigQueryOutput_1_BQBE = new com.google.api.services.bigquery.model.TableFieldSchema();
+		col2_BigQueryOutput_1_BQBE.setName("col2");
+		col2_BigQueryOutput_1_BQBE.setType("string");
+		fields_BigQueryOutput_1_BQBE
+				.add(col2_BigQueryOutput_1_BQBE);
+//
+//		log.debug("BigQueryOutput_1_BQBE - Field index[1] {\"name\":\"col2\",\"type\":\"string\"}");
+
+		com.google.api.services.bigquery.model.TableFieldSchema col3_BigQueryOutput_1_BQBE = new com.google.api.services.bigquery.model.TableFieldSchema();
+		col3_BigQueryOutput_1_BQBE.setName("col3");
+		col3_BigQueryOutput_1_BQBE.setType("string");
+		fields_BigQueryOutput_1_BQBE
+				.add(col3_BigQueryOutput_1_BQBE);
+
+//			log.debug("BigQueryOutput_1_BQBE - Field index[2] {\"name\":\"col3\",\"type\":\"string\"}");
+
+		schema_BigQueryOutput_1_BQBE
+				.setFields(fields_BigQueryOutput_1_BQBE);
+
+		queryLoad_BigQueryOutput_1_BQBE
+				.setSchema(schema_BigQueryOutput_1_BQBE);
+
+		queryLoad_BigQueryOutput_1_BQBE
+				.setCreateDisposition("CREATE_IF_NEEDED");
+
+		queryLoad_BigQueryOutput_1_BQBE.setFieldDelimiter(",");
+
+		queryLoad_BigQueryOutput_1_BQBE.setAllowQuotedNewlines(true);
+
+		queryLoad_BigQueryOutput_1_BQBE
+				.setWriteDisposition("WRITE_APPEND");
+		com.google.api.services.bigquery.model.TableReference destinationTable_BigQueryOutput_1_BQBE = new com.google.api.services.bigquery.model.TableReference();
+		destinationTable_BigQueryOutput_1_BQBE
+				.setProjectId(PROJECT_ID_BigQueryOutput_1_BQBE);
+		destinationTable_BigQueryOutput_1_BQBE
+				.setDatasetId("BELKDATA");
+		destinationTable_BigQueryOutput_1_BQBE.setTableId("temp");
+
+		queryLoad_BigQueryOutput_1_BQBE
+				.setDestinationTable(destinationTable_BigQueryOutput_1_BQBE);
+		queryLoad_BigQueryOutput_1_BQBE
+				.setSourceUris(java.util.Arrays
+						.asList("gs://kailash/talend/abc2.csv"));
+		queryLoad_BigQueryOutput_1_BQBE.setSkipLeadingRows(1);
+
+		config_BigQueryOutput_1_BQBE
+				.setLoad(queryLoad_BigQueryOutput_1_BQBE);
+
+		job_BigQueryOutput_1_BQBE
+				.setConfiguration(config_BigQueryOutput_1_BQBE);
+
+		com.google.api.services.bigquery.Bigquery.Jobs.Insert insertReq_BigQueryOutput_1_BQBE = bigqueryclient_BigQueryOutput_1_BQBE
+				.jobs().insert("", job_BigQueryOutput_1_BQBE);
+		insertReq_BigQueryOutput_1_BQBE
+				.setProjectId(PROJECT_ID_BigQueryOutput_1_BQBE);
+
+		System.out.println("BigQueryOutput_1_BQBE - Build a job successfully.");
+		System.out.println("BigQueryOutput_1_BQBE - Starting load the job.");
+
+		System.out.println("Starting load job.");
+		com.google.api.services.bigquery.model.Job jobExec_BigQueryOutput_1_BQBE = null;
+		try {
+			jobExec_BigQueryOutput_1_BQBE = insertReq_BigQueryOutput_1_BQBE
+					.execute();
+		} catch (Exception ee_BigQueryOutput_1_BQBE) {
+
+			System.out.println("BigQueryOutput_1_BQBE - "
+					+ ee_BigQueryOutput_1_BQBE.getMessage() + "\n"
+					+ ee_BigQueryOutput_1_BQBE.getCause());
+
+			System.err.println(ee_BigQueryOutput_1_BQBE.getMessage()
+					+ "\n" + ee_BigQueryOutput_1_BQBE.getCause());
+
+			
+		} 
+
+		/**
+		 * [BigQueryOutput_1_BQBE begin ] stop
+		 */
+
+    }
+}

@@ -10,13 +10,96 @@
   <url>http://www.talend.org/</url>
   <modules>
     <module>code/routines</module>
+    <module>jobs/process/KIRAN/DataOperation_Jobs/test_0.1</module>
+    <module>jobs/process/KAILASH/Enhancement/UBK20_REGAPI/STG_JOBS/Extraction/ubk20_to_comm_channel_pref_0.1</module>
+    <module>jobs/process/KIRAN/UBK20/Load/ubk_20_api_cntct_channel_pref_copy_3.0</module>
+    <module>jobs/process/KAILASH/TALEND_USERS/KAILASH/UBK_AUTOMATION_PHASE/UBK20_REGAPI/SYNC_LOAD/job_ubk_20_api_cntct_prod_prch_2.1</module>
+    <module>jobs/process/KAILASH/Enhancement/UBK20_REGAPI/STG_JOBS/Extraction/ubk_to_account_csv__0.1</module>
+    <module>jobs/process/KAILASH/TALEND_USERS/KAILASH/UBK_AUTOMATION_PHASE/UBK20_REGAPI/SYNC_LOAD/job_ubk_20_api_cntct_address_2.0</module>
+    <module>jobs/process/KIRAN/UBK20/Extraction/ubk20_ext_mst_seq_k_0.1</module>
+    <module>jobs/process/KIRAN/UBK20/Load/ubk_20_api_cntct_fax_copy_2.0</module>
+    <module>jobs/process/KAILASH/TALEND_USERS/KAILASH/UBK_AUTOMATION_PHASE/UBK20_REGAPI/SYNC_LOAD/job_ubk_20_api_cntct_org_rel_data_0.4</module>
+    <module>jobs/process/KIRAN/UBK20/Load/job_ubk_20_api_cntct_fax_phone_copy_2.0</module>
+    <module>jobs/process/KAILASH/TALEND_USERS/KAILASH/UBK_AUTOMATION_PHASE/UBK20_REGAPI/SYNC_LOAD/job_ubk_20_api_cntct_fax_phone_2.0</module>
+    <module>jobs/process/KIRAN/UBK20/Load/ubk_20_api_cntct_org_rel_data_copy_0.4</module>
+    <module>jobs/process/KIRAN/UBK20/Load/ubk_20_api_cntct_email_copy_3.0</module>
+    <module>jobs/process/KAILASH/Enhancement/UBK20_REGAPI/STG_JOBS/Extraction/ubk20_to_commpreferences_0.1</module>
+    <module>jobs/process/KIRAN/UBK20/Load/ubk_20_api_cntct_profile_copy_3.0</module>
+    <module>jobs/process/KAILASH/TALEND_USERS/KAILASH/UBK_AUTOMATION_PHASE/UBK20_REGAPI/EXTRACTION/job_ubk20_to_comm_preferences_0.1</module>
+    <module>jobs/process/KIRAN/UBK20/Load/ubk_20_api_cntct_communication_pref_copy_3.0</module>
+    <module>jobs/process/KIRAN/UBK20/Extraction/ubk20_to_commpreferences_k_0.1</module>
+    <module>jobs/process/KIRAN/DataOperation_Jobs/JCL_NW18/jlc_interest_0.1</module>
+    <module>jobs/process/KAILASH/TALEND_USERS/KAILASH/UBK_AUTOMATION_PHASE/UBK20_REGAPI/TestJobs/ubk_20_api_cntct_phone_test_2.0</module>
+    <module>jobs/process/KAILASH/TALEND_USERS/KAILASH/UBK_AUTOMATION_PHASE/UBK20_REGAPI/EXTRACTION/job_ubk_20_api_listofaccounts_0.2</module>
+    <module>jobs/process/KIRAN/UBK20/Extraction/ubk_20_api_listofaccounts_k_0.2</module>
+    <module>jobs/process/KAILASH/TALEND_USERS/KAILASH/UBK_AUTOMATION_PHASE/UBK20_REGAPI/SYNC_LOAD/job_ubk_20_api_cntct_channel_pref_3.0</module>
+    <module>jobs/process/KIRAN/DataOperation_Jobs/ABX_Expo_2018/abx18_interest_0.1</module>
+    <module>jobs/process/KIRAN/UBK20/Cleanup/cleanup_ubk_phone_data_k_2.0</module>
+    <module>jobs/process/KIRAN/UBK20/Cleanup/cleanup_ubk_fax_data_k_2.0</module>
+    <module>jobs/process/KIRAN/Eloqua/cdointodatabase_0.1</module>
+    <module>jobs/process/KAILASH/TALEND_USERS/KAILASH/UBK_AUTOMATION_PHASE/UBK20_REGAPI/CLEANUP/job_cleanup_ubk_order_3.0</module>
+    <module>jobs/process/KIRAN/UBK20/Extraction/ubk20_to_comm_channel_pref_k_0.1</module>
+    <module>jobs/process/KIRAN/UBK20/Load/ubk_20_api_cntct_prod_prch_copy_2.1</module>
+    <module>jobs/joblets/effectiverecordsforaddress_0.1</module>
+    <module>jobs/process/demo/onboardingdemojob_0.1</module>
+    <module>jobs/process/KAILASH/TALEND_USERS/KAILASH/UBK_AUTOMATION_PHASE/UBK20_REGAPI/TestJobs/ubk_20_api_cntct_fax_test_2.0</module>
+    <module>jobs/process/KIRAN/UBK20/Load/ubk_20_api_orgn_data_copy_2.0</module>
+    <module>jobs/process/KIRAN/DataOperation_Jobs/JCL_NW18/jlc_jobs_sequence_0.1</module>
+    <module>jobs/process/KIRAN/UBK20/Extraction/ubk_to_account_csv__k_0.1</module>
+    <module>jobs/process/KIRAN/DataOperation_Jobs/JCL_NW18/jlcnw18_bau_final_0.1</module>
+    <module>jobs/process/KAILASH/TALEND_USERS/KAILASH/UBK_AUTOMATION_PHASE/UBK20_REGAPI/SYNC_LOAD/job_ubk_20_api_cntct_sessn_hstry_2.1</module>
+    <module>jobs/process/KAILASH/TALEND_USERS/KAILASH/UBK_AUTOMATION_PHASE/UBK20_REGAPI/EXTRACTION/job_ubk20_to_order_csv_0.1</module>
+    <module>jobs/process/KIRAN/DataOperation_Jobs/ABX_Expo_2018/abx_expo_static_0.1</module>
+    <module>jobs/process/KIRAN/UBK20/Jobs_SEQUENCE/ubk20_cleanup_seq_k_0.1</module>
+    <module>jobs/process/KIRAN/DataOperation_Jobs/ABX_Expo_2018/abx_final_0.1</module>
+    <module>jobs/process/KIRAN/UBK20/Load/ubk_20_api_cntct_sessn_hstry_copy_2.1</module>
+    <module>jobs/process/KIRAN/UBK20/Load/ubk_20_api_cntct_address_copy_2.0</module>
+    <module>jobs/process/KAILASH/Enhancement/UBK20_REGAPI/STG_JOBS/Extraction/ubk20_to_comm_0.1</module>
+    <module>jobs/process/KAILASH/TALEND_USERS/KAILASH/UBK_AUTOMATION_PHASE/UBK20_REGAPI/SYNC_LOAD/job_ubk_20_api_cntct_communication_pref_3.0</module>
+    <module>jobs/process/KAILASH/TALEND_USERS/KAILASH/UBK_AUTOMATION_PHASE/UBK20_REGAPI/SYNC_LOAD/job_ubk_20_api_orgn_data_2.0</module>
+    <module>jobs/process/KIRAN/Eloqua/cdosintojsonformat_0.1</module>
+    <module>jobs/process/KAILASH/TALEND_USERS/KAILASH/UBK_AUTOMATION_PHASE/UBK20_REGAPI/EXTRACTION/job_ubk_to_account_csv_0.1</module>
+    <module>jobs/process/KIRAN/DataOperation_Jobs/JCL_NW18/jlc_nw18_static_0.1</module>
+    <module>jobs/process/KAILASH/TALEND_USERS/KAILASH/UBK_AUTOMATION_PHASE/UBK20_REGAPI/SYNC_LOAD/job_ubk_20_api_cntct_profile_3.0</module>
+    <module>jobs/joblets/effectiveaccounts_0.1</module>
+    <module>jobs/joblets/ubk_listofacc_0.1</module>
+    <module>jobs/process/KAILASH/TALEND_USERS/KAILASH/UBK_AUTOMATION_PHASE/UBK20_REGAPI/TestJobs/job_ubk_20_api_cntct_address_test_2.0</module>
+    <module>jobs/process/KIRAN/UBK20/Cleanup/cleanup_ubk_order_k_3.0</module>
+    <module>jobs/process/KIRAN/UBK20/Extraction/ubk20_to_comm_k_0.1</module>
+    <module>jobs/process/KAILASH/TALEND_USERS/KAILASH/UBK_AUTOMATION_PHASE/UBK20_REGAPI/SYNC_LOAD/job_ubk_20_api_cntct_email_3.0</module>
+    <module>jobs/process/KIRAN/DataOperation_Jobs/ABX_Expo_2018/dynamicque_xxxx_bau_demog_0.1</module>
+    <module>jobs/process/KAILASH/TALEND_USERS/KAILASH/UBK_AUTOMATION_PHASE/UBK20_REGAPI/CLEANUP/job_cleanup_ubk_data_3.0</module>
+    <module>jobs/process/KIRAN/DataOperation_Jobs/JCL_NW18/demog_jlcnw18_xxxx_bau_copy_0.1</module>
+    <module>jobs/process/KIRAN/DataOperation_Jobs/JCL_NW18/testjob_0.1</module>
+    <module>jobs/process/KIRAN/UBK20/Extraction/ubk20_to_order_item_k_0.1</module>
+    <module>jobs/process/KAILASH/TALEND_USERS/KAILASH/UBK_AUTOMATION_PHASE/UBK20_REGAPI/SEQ/ubk20_load_seq_copy_0.1</module>
+    <module>jobs/process/KIRAN/Eloqua/eloquabaseurl_0.1</module>
+    <module>jobs/process/KAILASH/Enhancement/UBK20_REGAPI/STG_JOBS/Extraction/ubk20_to_order_csv_0.1</module>
+    <module>jobs/process/KIRAN/UBK20/Extraction/ubk20_to_order_csv_k_0.1</module>
+    <module>jobs/process/KAILASH/Enhancement/UBK20_REGAPI/STG_JOBS/Extraction/ubk_to_account_contact_relation_0.1</module>
+    <module>jobs/process/KIRAN/UBK20/Extraction/ubk_to_account_contact_relation_k_0.1</module>
+    <module>jobs/process/KAILASH/TALEND_USERS/KAILASH/UBK_AUTOMATION_PHASE/UBK20_REGAPI/job_ubk20_extract_0.1</module>
+    <module>jobs/process/KIRAN/DataOperation_Jobs/ABX_Expo_2018/copy_of_abx_expo_static_0.1</module>
+    <module>jobs/process/KIRAN/UBK20/Load/ubk_20_api_cntct_phone_copy_2.0</module>
+    <module>jobs/process/KIRAN/UBK20/Jobs_SEQUENCE/master_job_0.1</module>
+    <module>jobs/process/KIRAN/Eloqua/fetchcdolists_0.1</module>
+    <module>jobs/process/KIRAN/timesheet_0.1</module>
+    <module>jobs/process/KIRAN/UBK20/Cleanup/cleanup_ubk_email_data_k_3.0</module>
+    <module>jobs/process/KIRAN/DataOperation_Jobs/JCL_NW18/jlc_nw18_nob_0.1</module>
+    <module>jobs/process/KIRAN/DataOperation_Jobs/ABX_Expo_2018/abx18_nob_0.1</module>
+    <module>jobs/process/KIRAN/DataOperation_Jobs/ABX_Expo_2018/abx_sequence_0.1</module>
+    <module>jobs/process/KIRAN/DataOperation_Jobs/JCL_NW18/jlc_visitortype_0.1</module>
+    <module>jobs/process/KAILASH/Enhancement/UBK20_REGAPI/STG_JOBS/Extraction/ubk20_to_order_item_0.1</module>
+    <module>jobs/process/KIRAN/UBK20/Jobs_SEQUENCE/ubk20_load_seq_k_0.1</module>
+    <module>jobs/process/KAILASH/TALEND_USERS/KAILASH/UBK_AUTOMATION_PHASE/UBK20_REGAPI/EXTRACTION/job_ubk20_to_order_item_0.1</module>
+    <module>jobs/process/KIRAN/UBK20/Load/comm_dir_load_0.1</module>
   </modules>
   <properties>
     <talend.project.name>TALENDCLOUDPROJECT</talend.project.name>
     <encoding>UTF-8</encoding>
     <talend.version>7.1.1</talend.version>
-    <maven.deploy.skip>true</maven.deploy.skip>
     <talend.docker.tag>${project.version}</talend.docker.tag>
+    <maven.deploy.skip>true</maven.deploy.skip>
     <talend.docker.name>${talend.project.name.lowercase}/${talend.job.folder}%a</talend.docker.name>
   </properties>
   <build>

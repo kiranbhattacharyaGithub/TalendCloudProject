@@ -1,0 +1,55 @@
+package routines;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+import org.json.*;
+
+
+
+public class GirikonXMLtoJSON {
+	
+	public static String convertFile(String filePath) throws IOException
+	{
+		String key = "";
+
+
+		{
+		    FileReader file = null;
+			try {
+				file = new FileReader(filePath);
+			} catch (FileNotFoundException e) {
+				
+				e.printStackTrace();
+			}
+		    BufferedReader reader = new BufferedReader(file);
+
+		    String line = reader.readLine();
+
+		    while (line != null) {
+		        key += line;
+		        line = reader.readLine();
+		    }
+		
+		    
+		}
+		System.out.println(convert(key));
+	    return(convert(key));
+		
+	}
+	
+	
+
+	  public static String convert(String args) {
+		  String jsonPrettyPrintString =null;
+	        try {
+	            JSONObject xmlJSONObj = XML.toJSONObject(args);
+	            jsonPrettyPrintString = xmlJSONObj.toString();
+	            //System.out.println(jsonPrettyPrintString);
+	        } catch (JSONException je) {
+	            System.out.println(je.toString());
+	        }
+	        return (jsonPrettyPrintString);
+	    }
+}

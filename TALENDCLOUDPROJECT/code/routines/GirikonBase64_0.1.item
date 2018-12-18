@@ -1,0 +1,105 @@
+package routines;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import org.apache.commons.codec.binary.Base64;
+import java.util.Base64.Encoder;
+
+
+// Import de Apache Commons Codec for Base64 conversion of documents
+
+
+
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class GirikonBase64 {
+	
+	public static String base64String(String ...inputStr){
+		String encodeStr=null;
+		
+		for(String s:inputStr){
+			encodeStr=s+encodeStr;
+			
+		} 
+		
+		String encodedBase64 = new String(Base64.encodeBase64(encodeStr.getBytes()));
+		return encodedBase64;
+	}
+	
+	
+	public static String getBase64PDF2(String attachment){
+		
+
+	File originalFile = new File(attachment);
+    String encodedBase64 = null;
+   
+    try {
+        FileInputStream fileInputStreamReader = new FileInputStream(originalFile);
+        byte[] bytes = new byte[(int)originalFile.length()];
+        
+        fileInputStreamReader.read(bytes);
+        encodedBase64 = new String(Base64.encodeBase64(bytes));
+    } catch (FileNotFoundException e) {
+        e.printStackTrace();
+    } catch (IOException e) {
+        e.printStackTrace();
+    }
+    return encodedBase64 ;
+	}
+	
+	public static byte[] getBase64PDF(String attachment) throws IOException
+	{
+		//String BODY;
+		File file = new File(attachment);
+		InputStream is = new FileInputStream(file);
+		long length = file.length();
+		  if (length > Integer.MAX_VALUE) {
+		        // File is too large
+		    }
+		  byte[] bytes = new byte[(int)length];
+		  int offset = 0;
+		  int numRead = 0;
+		  
+		  while (offset < bytes.length
+		           && (numRead=is.read(bytes, offset, bytes.length-offset)) >= 0) {
+		        offset += numRead;
+		    }
+		  if (offset < bytes.length) {
+		        extracted(file);
+		    }
+		    is.close();
+		    //BODY = new String(bytes);
+		    
+		    //Base64 tmp = new Base64();
+			//BODY = new String(tmp.encode(bytes));
+			//System.out.println(BODY);
+			 return bytes;
+	}
+
+	private static void extracted(File file) throws IOException {
+		throw new IOException("Could not completely read file "+file);
+	}
+	
+
+	
+
+}
