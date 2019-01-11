@@ -1,7 +1,4 @@
-*
-* This is a job with 2 tRowGenerator, 1 tMap and 1 tLogRow.
-*/
- 
+
 //add component node 
 addComponent{
 setComponentDefinition {
