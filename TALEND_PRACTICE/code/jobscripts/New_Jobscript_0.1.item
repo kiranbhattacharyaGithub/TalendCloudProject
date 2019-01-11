@@ -1,0 +1,251 @@
+*
+* This is a job with 2 tRowGenerator, 1 tMap and 1 tLogRow.
+*/
+ 
+//add component node 
+addComponent{
+//set basic infomation
+setComponentDefinition {
+		TYPE:tRowGenerator,
+		NAME:"tRowGenerator_1",
+		POSITION: 160, 64
+	}
+	//set element parameters
+        	setSettings{
+		NB_ROWS:100,
+		VALUES{
+			SCHEMA_COLUMN:tableOneColumn1,
+			ARRAY:TalendString.getAsciiRandomString(6),
+			SCHEMA_COLUMN:tableOneColumn2,
+			ARRAY:TalendString.getAsciiRandomString(6),
+			SCHEMA_COLUMN:tableOneColumn3,
+			ARRAY:TalendString.getAsciiRandomString(6)
+		}
+	}
+	//add the schema
+    addSchema {
+		NAME:"schema1",
+		TYPE:"FLOW",
+		LABEL:"tRowGenerator_1"
+		addColumn {
+			NAME:tableOneColumn1,
+			TYPE:id_String,
+			KEY:false,
+			NULLABLE:false
+		}
+		addColumn {
+			NAME:tableOneColumn2,
+			TYPE:id_String,
+			KEY:false,
+			NULLABLE:true
+		}
+		addColumn {
+			NAME:tableOneColumn3,
+			TYPE:id_String,
+			KEY:false,
+			NULLABLE:true
+		}
+	}
+}
+addComponent{
+	setComponentDefinition {
+		TYPE:tRowGenerator,
+		NAME:"tRowGenerator_2",
+		POSITION: 160, 192
+	}
+	setSettings{
+		NB_ROWS:100,
+		VALUES{
+			SCHEMA_COLUMN:tableTwoColumn1,
+			ARRAY:TalendString.getAsciiRandomString(6),
+			SCHEMA_COLUMN:tableTwoColumn2,
+			ARRAY:TalendString.getAsciiRandomString(6)
+		}
+	}
+	addSchema {
+		NAME:"schema2",
+		TYPE:"FLOW",
+		LABEL:"tRowGenerator_2"
+		addColumn {
+			NAME:tableTwoColumn1,
+			TYPE:id_String,
+			KEY:false,
+			NULLABLE:false
+		}
+		addColumn {
+			NAME:tableTwoColumn2,
+			TYPE:id_String,
+			KEY:false,
+			NULLABLE:true
+		}
+	}
+}
+addComponent{
+	setComponentDefinition {
+		TYPE:tLogRow,
+		NAME:"tLogRow_1",
+		POSITION: 544, 128
+	}
+	setSettings{
+		LENGTHS{
+			SCHEMA_COLUMN:var1,
+			SCHEMA_COLUMN:var2,
+			SCHEMA_COLUMN:var4
+		}
+	}
+	addSchema {
+		NAME:"schema3",
+		TYPE:"FLOW",
+		LABEL:"newOutPut"
+		addColumn {
+			NAME:var1,
+			TYPE:id_String,
+			KEY:false,
+			NULLABLE:false
+		}
+		addColumn {
+			NAME:var2,
+			TYPE:id_String,
+			KEY:false,
+			NULLABLE:true
+		}
+		addColumn {
+			NAME:var4,
+			TYPE:id_String,
+			KEY:false,
+			NULLABLE:true
+		}
+	}
+}
+addComponent{
+	setComponentDefinition{
+		TYPE:tMap,
+		NAME:"tMap_1",
+		POSITION: 352, 128
+	}
+	setSettings{
+		EXTERNAL:Map
+	}
+		addSchema {
+			NAME: "newOutPut",
+			TYPE: "FLOW",
+			LABEL: "newOutPut"
+			addColumn {
+				NAME: "var1",
+				TYPE: "id_String"
+			}
+			addColumn {
+				NAME: "var2",
+				TYPE: "id_String",
+				NULLABLE: true
+			}
+			addColumn {
+				NAME: "var4",
+				TYPE: "id_String",
+				NULLABLE: true
+			}
+		}
+	//add special data, input tables, an output table, and a var table in tMap 	
+    addMapperData{
+		//the syntax is almost the same as the metatable
+        		addInputTable{
+			NAME:row1,
+			SIZESTATE:INTERMEDIATE,
+			EXPRESSIONFILTER:filter
+			addColumn {
+				NAME:tableOneColumn1,
+				TYPE:id_String,
+				NULLABLE:false
+			}
+			addColumn {
+				NAME:tableOneColumn2,
+				TYPE:id_String,
+				NULLABLE:true
+			}
+			addColumn {
+				NAME:tableOneColumn3,
+				TYPE:id_String,
+				NULLABLE:true
+			}
+		}
+		//add another input table
+        		addInputTable{
+			NAME:row2,
+			SIZESTATE:MINIMIZED
+			addColumn {
+				NAME:tableTwoColumn1,
+				TYPE:id_String,
+				NULLABLE:false
+			}
+			addColumn {
+				NAME:tableTwoColumn2,
+				TYPE:id_String,
+				NULLABLE:true
+			}
+		}
+		//add the var table
+        		addVarTable{
+			NAME:Var
+			addColumn{
+				NAME:var1,
+				TYPE:id_String,
+				EXPRESSION:row1.tableOneColumn1+row2.tableTwoColumn1
+			}
+			addColumn{
+				NAME:var2,
+				TYPE:id_String,
+				EXPRESSION:row1.tableOneColumn2
+			}
+			addColumn{
+				NAME:var3,
+				TYPE:id_String,
+				EXPRESSION:row1.tableOneColumn3+row2.tableTwoColumn2
+			}
+			addColumn{
+				NAME:var4,
+				TYPE:id_String
+			}
+		}
+		//add the output table
+        		addOutputTable{
+			NAME:newOutPut
+			addColumn{
+				NAME:var1,
+				TYPE:id_String,
+				EXPRESSION:Var.var1+Var.var3
+			}
+			addColumn{
+				NAME:var2,
+				TYPE:id_String,
+				EXPRESSION:Var.var2
+			}
+			addColumn{
+				NAME:var4,
+				TYPE:id_String,
+				EXPRESSION:Var.var4
+			}
+		}
+	}
+}
+//add connections 
+addConnection{
+	TYPE:"FLOW",
+	NAME:"row1",
+	LINESTYLE:0,
+	SOURCE:"tRowGenerator_1",
+	TARGET:"tMap_1"
+}
+addConnection{
+	TYPE:"FLOW",
+	NAME:"row2",
+	LINESTYLE:8,
+	SOURCE:"tRowGenerator_2",
+	TARGET:"tMap_1"
+}
+addConnection{
+	TYPE:"FLOW",
+	NAME:"newOutPut",
+	LINESTYLE:0,
+	SOURCE:"tMap_1",
+	TARGET:"tLogRow_1"
+}
