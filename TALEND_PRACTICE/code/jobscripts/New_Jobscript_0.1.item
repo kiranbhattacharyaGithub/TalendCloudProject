@@ -222,7 +222,7 @@ addComponent{
 			}
 		}
 	}
-}
+
 //add connections 
 addConnection{
 	TYPE:"FLOW",
