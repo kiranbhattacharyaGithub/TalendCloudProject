@@ -10,4 +10,11 @@
 		<nature>org.talend.core.talendnature</nature>
 		<nature>com.oaklandsw.transform.runtime.nature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>temp/New_Jobscript_0.1.jobscript</name>
+			<type>1</type>
+			<locationURI>WORKSPACE_LOC/.repositories/287254863/master/TALEND_PRACTICE/code/jobscripts/New_Jobscript_0.1.item</locationURI>
+		</link>
+	</linkedResources>
 </projectDescription>
