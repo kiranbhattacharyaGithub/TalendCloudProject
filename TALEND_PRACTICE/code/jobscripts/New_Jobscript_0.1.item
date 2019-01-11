@@ -4,7 +4,6 @@
  
 //add component node 
 addComponent{
-//set basic infomation
 setComponentDefinition {
 		TYPE:tRowGenerator,
 		NAME:"tRowGenerator_1",
