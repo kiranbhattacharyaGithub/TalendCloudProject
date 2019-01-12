@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
-  <TalendMetadata:DatabaseConnection AdditionalParams="context.cookbookDBCompleted_AdditionalParams" ContextId="_bviz0DlLEeOkL67Ja7unaQ" ContextMode="true" DBRootPath="" DatabaseType="MySQL" DatasourceName="" DbmsId="mysql_id" DriverClass="org.gjt.mm.mysql.Driver" DriverJarPath="" FileFieldName="" Password="context.cookbookDBCompleted_Password" Port="context.cookbookDBCompleted_Port" ProductId="MYSQL" SID="context.cookbookDBCompleted_Database" SQLMode="false" ServerName="context.cookbookDBCompleted_Server" SqlSynthax="SQL Syntax" StandardSQL="true" URL="jdbc:mysql://localhost:3306/cookbookDB1?noDatetimeStringSync=true" UiSchema="" Username="context.cookbookDBCompleted_Login" contextName="Default" dataPackage="_KSDg0DodEeOFxYerR36Ymw _KSDg0TodEeOFxYerR36Ymw" dbVersionString="MYSQL_5" id="_YsoccDlLEeOkL67Ja7unaQ" label="cookbookDBCompleted" name="cookbookDBCompleted" xmi:id="_YtSjwDlLEeOkL67Ja7unaQ">
-    <taggedValue tag="Is Conn Need Reload" value="true" xmi:id="_w2djIdOFEeKh9e0rgtmRrw"/>
+  <TalendMetadata:DatabaseConnection AdditionalParams="context.cookbookDBCompleted_AdditionalParams" ContextId="_bviz0DlLEeOkL67Ja7unaQ" ContextMode="true" DBRootPath="" DatabaseType="MySQL" DatasourceName="" DbmsId="mysql_id" DriverClass="org.gjt.mm.mysql.Driver" DriverJarPath="" FileFieldName="" NullChar="" Password="context.cookbookDBCompleted_Password" Port="context.cookbookDBCompleted_Port" ProductId="MYSQL" SID="context.cookbookDBCompleted_Database" SQLMode="false" ServerName="context.cookbookDBCompleted_Server" SqlSynthax="" StandardSQL="true" StringQuote="" URL="jdbc:mysql://localhost:3306/cookbookDB?noDatetimeStringSync=true" UiSchema="" Username="context.cookbookDBCompleted_Login" contextName="Default" dataPackage="_KSDg0TodEeOFxYerR36Ymw" dbVersionString="MYSQL_5" id="_YsoccDlLEeOkL67Ja7unaQ" label="cookbookDBCompleted" name="cookbookDBCompleted" xmi:id="_YtSjwDlLEeOkL67Ja7unaQ">
+    <taggedValue tag="Is Conn Need Reload" value="false" xmi:id="_w2djIdOFEeKh9e0rgtmRrw"/>
     <taggedValue tag="package filter" value="" xmi:id="_w6XywNOFEeKh9e0rgtmRrw"/>
     <taggedValue tag="Status" value="" xmi:id="_w6ix4NOFEeKh9e0rgtmRrw"/>
     <taggedValue tag="Version" value="0.1" xmi:id="_w6ix4dOFEeKh9e0rgtmRrw"/>
@@ -15,7 +15,6 @@
       <query id="_on6u0tW-EeK9CaeWWn2akg" label="aaa" name="aaa" value="SELECT &#13;&#10;  c.`name`, &#13;&#10;  SUM(o.`orderTotal`)&#13;&#10;FROM `customer` c&#13;&#10;INNER JOIN `order`  o ON c.customerId = o.customerId&#13;&#10;GROUP BY c.name &#13;&#10;HAVING SUM(o.`orderTotal`) &gt; 50" xmi:id="_on6u0dW-EeK9CaeWWn2akg"/>
     </queries>
   </TalendMetadata:DatabaseConnection>
-  <orgomg.cwm.resource.relational:Catalog dataManager="_YtSjwDlLEeOkL67Ja7unaQ" name="cookbookDB1" xmi:id="_KSDg0DodEeOFxYerR36Ymw"/>
   <orgomg.cwm.resource.relational:Catalog dataManager="_YtSjwDlLEeOkL67Ja7unaQ" name="cookbookDB" xmi:id="_KSDg0TodEeOFxYerR36Ymw">
     <ownedElement id="_7o5esN0MEeKJup-OXY7U6A" label="testindividualfields" name="testindividualfields" tableType="TABLE" xmi:id="_KSDg0jodEeOFxYerR36Ymw" xsi:type="relational:TdTable">
       <taggedValue tag="Comment" value="" xmi:id="_KSDg0zodEeOFxYerR36Ymw"/>
@@ -247,13 +246,13 @@
       </feature>
     </ownedElement>
   </orgomg.cwm.resource.relational:Catalog>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_5e4d3508-498c-4d00-a4da-4c0fad8446cb"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>zlLbfeyeUOY+qDQDebk88HuWpGJn8FdssmDivjcdTMw1C2JzyAuVT2x0cLeGYuVU4bN8QIRBNlCU
-/ygIpVaAfg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_19400714-de4e-4246-9329-3fc85819bb05"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>8gCYbJOyxqvCvmhb7YfmM4NnHeNhtd21+rJcU5KWGoMqLptzrvLpQNAyxihXXrHw5h8AtXovESWe
-JVs6SXSqYQ==</DigestValue></Reference></SignedInfo><SignatureValue>OgtTCxMA8dAuxH+6SNNPMw83SBOvBOZPXpq9X68EXqvmHFZmmVamoQRkJhTPXM8yjHuCct3dbCRL
-frS8theYeQr5hym5/eq2ifs5UQdBLokkAm0XIsSNVVHJ+d7wp0msLfgJ3Rzbqor6QtxDWX4feV/d
-HPwCZN+77wIFUCMDTWXKz3579tooakyydwxyCczjFdhwt1rtaD0IFDyl1KXYTiNkyytV/yYVKoEK
-nCKtS3o3qaSObFhJvmFqqD2NWjasU4F4AHDgm7jQDxYfC4ethUW/So9qLBGmAmNdPI7h+XzA94rY
-rQhLk1gn0i22GvVvr+g4wXMA+BtOQmqL5OpkMA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_87cf0022-96cb-4847-a619-04641ed51dc0"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>31y1eB19D44fZ9IGo3pmGy8K74derN+5WYzU8Sj2MiSAv2eYi7c0vzRSmG5nrfQN9bZYqBs0IN1A
+WEVWgDmeqA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e295a21d-f0f6-41e0-ad0d-5cf24e582178"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>GqPZS3Uu18z6BCIC7YXtCN/nnu37vuwU9R3MNEEAKMUUIxg03d7B7rVYcbR9wzMRxWfOxQpcj1CB
+o4IEZBloBw==</DigestValue></Reference></SignedInfo><SignatureValue>zvRyPeQi9Ipi63s9JuBsWhpmnuojQS9cH50A441xaWvr0juBPPxVRBYcfJkIpVUhAMSrtM4+YP3F
+CYx+F+BvA/xqV159MalsKjJX6Yb+4UFeN968ScBr2E5yTkd2vp7VzaZAaMxbRmI0vPVS/plZH064
+JYQHdorSrlpvZp43cFCD66xJ/A6YifNT3iNJqhR/6uB8v1SoeCb4iRDkvkBAgFJiShaFbpvPDEXC
+0IKKDACJT3UFGoxDO5WXI8Fnc6HifbhH02tdt+pBNW0V7/py+mX6XX9lzMLdrfqiRq+sippfYW6M
+OOIYqZY5b/A9vLrpvGMTnujcv8QI3z3CW1QfqA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -277,4 +276,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_19400714-de4e-4246-9329-3fc85819bb05" Target="#_5e4d3508-498c-4d00-a4da-4c0fad8446cb"><Timestamp>2019-01-10 09:15:57</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e295a21d-f0f6-41e0-ad0d-5cf24e582178" Target="#_87cf0022-96cb-4847-a619-04641ed51dc0"><Timestamp>2019-01-12 11:17:30</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
