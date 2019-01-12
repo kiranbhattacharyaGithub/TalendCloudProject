@@ -4,8 +4,8 @@
     <contextParameter comment="" name="cookbookDBCompleted_Server" prompt="cookbookDBCompleted_Server?" promptNeeded="false" repositoryContextId="_bviz0DlLEeOkL67Ja7unaQ" type="id_String" value="localhost"/>
     <contextParameter comment="" name="cookbookDBCompleted_Port" prompt="cookbookDBCompleted_Port?" promptNeeded="false" repositoryContextId="_bviz0DlLEeOkL67Ja7unaQ" type="id_String" value="3306"/>
     <contextParameter comment="" name="cookbookDBCompleted_AdditionalParams" prompt="cookbookDBCompleted_AdditionalParams?" promptNeeded="false" repositoryContextId="_bviz0DlLEeOkL67Ja7unaQ" type="id_String" value="noDatetimeStringSync=true"/>
-    <contextParameter comment="" name="cookbookDBCompleted_Password" prompt="cookbookDBCompleted_Password?" promptNeeded="false" repositoryContextId="_bviz0DlLEeOkL67Ja7unaQ" type="id_Password" value="YdTnhbqBAdo="/>
-    <contextParameter comment="" name="cookbookDBCompleted_Login" prompt="cookbookDBCompleted_Login?" promptNeeded="false" repositoryContextId="_bviz0DlLEeOkL67Ja7unaQ" type="id_String" value="talend"/>
+    <contextParameter comment="" name="cookbookDBCompleted_Password" prompt="cookbookDBCompleted_Password?" promptNeeded="false" repositoryContextId="_bviz0DlLEeOkL67Ja7unaQ" type="id_Password" value="qtZ7JLv1jK8jz91ECuJ94w=="/>
+    <contextParameter comment="" name="cookbookDBCompleted_Login" prompt="cookbookDBCompleted_Login?" promptNeeded="false" repositoryContextId="_bviz0DlLEeOkL67Ja7unaQ" type="id_String" value="root"/>
     <contextParameter comment="" name="cookbookDBCompleted_Database" prompt="cookbookDBCompleted_Database?" promptNeeded="false" repositoryContextId="_bviz0DlLEeOkL67Ja7unaQ" type="id_String" value="cookbookDB"/>
   </context>
   <context confirmationNeeded="false" name="test">
@@ -13,8 +13,8 @@
     <contextParameter comment="" name="cookbookDBCompleted_Server" prompt="cookbookDBCompleted_Server?" promptNeeded="false" repositoryContextId="_bviz0DlLEeOkL67Ja7unaQ" type="id_String" value="localhost"/>
     <contextParameter comment="" name="cookbookDBCompleted_Port" prompt="cookbookDBCompleted_Port?" promptNeeded="false" repositoryContextId="_bviz0DlLEeOkL67Ja7unaQ" type="id_String" value="3306"/>
     <contextParameter comment="" name="cookbookDBCompleted_AdditionalParams" prompt="cookbookDBCompleted_AdditionalParams?" promptNeeded="false" repositoryContextId="_bviz0DlLEeOkL67Ja7unaQ" type="id_String" value="noDatetimeStringSync=true"/>
-    <contextParameter comment="" name="cookbookDBCompleted_Password" prompt="cookbookDBCompleted_Password?" promptNeeded="false" repositoryContextId="_bviz0DlLEeOkL67Ja7unaQ" type="id_Password" value="YdTnhbqBAdo="/>
-    <contextParameter comment="" name="cookbookDBCompleted_Login" prompt="cookbookDBCompleted_Login?" promptNeeded="false" repositoryContextId="_bviz0DlLEeOkL67Ja7unaQ" type="id_String" value="talend"/>
+    <contextParameter comment="" name="cookbookDBCompleted_Password" prompt="cookbookDBCompleted_Password?" promptNeeded="false" repositoryContextId="_bviz0DlLEeOkL67Ja7unaQ" type="id_Password" value="qtZ7JLv1jK8jz91ECuJ94w=="/>
+    <contextParameter comment="" name="cookbookDBCompleted_Login" prompt="cookbookDBCompleted_Login?" promptNeeded="false" repositoryContextId="_bviz0DlLEeOkL67Ja7unaQ" type="id_String" value="root"/>
     <contextParameter comment="" name="cookbookDBCompleted_Database" prompt="cookbookDBCompleted_Database?" promptNeeded="false" repositoryContextId="_bviz0DlLEeOkL67Ja7unaQ" type="id_String" value="cookbookDB"/>
   </context>
   <context confirmationNeeded="false" name="production">
@@ -22,16 +22,16 @@
     <contextParameter comment="" name="cookbookDBCompleted_Server" prompt="cookbookDBCompleted_Server?" promptNeeded="false" repositoryContextId="_bviz0DlLEeOkL67Ja7unaQ" type="id_String" value="localhost"/>
     <contextParameter comment="" name="cookbookDBCompleted_Port" prompt="cookbookDBCompleted_Port?" promptNeeded="false" repositoryContextId="_bviz0DlLEeOkL67Ja7unaQ" type="id_String" value="3306"/>
     <contextParameter comment="" name="cookbookDBCompleted_AdditionalParams" prompt="cookbookDBCompleted_AdditionalParams?" promptNeeded="false" repositoryContextId="_bviz0DlLEeOkL67Ja7unaQ" type="id_String" value="noDatetimeStringSync=true"/>
-    <contextParameter comment="" name="cookbookDBCompleted_Password" prompt="cookbookDBCompleted_Password?" promptNeeded="false" repositoryContextId="_bviz0DlLEeOkL67Ja7unaQ" type="id_Password" value="YdTnhbqBAdo="/>
-    <contextParameter comment="" name="cookbookDBCompleted_Login" prompt="cookbookDBCompleted_Login?" promptNeeded="false" repositoryContextId="_bviz0DlLEeOkL67Ja7unaQ" type="id_String" value="talend"/>
+    <contextParameter comment="" name="cookbookDBCompleted_Password" prompt="cookbookDBCompleted_Password?" promptNeeded="false" repositoryContextId="_bviz0DlLEeOkL67Ja7unaQ" type="id_Password" value="qtZ7JLv1jK8jz91ECuJ94w=="/>
+    <contextParameter comment="" name="cookbookDBCompleted_Login" prompt="cookbookDBCompleted_Login?" promptNeeded="false" repositoryContextId="_bviz0DlLEeOkL67Ja7unaQ" type="id_String" value="root"/>
     <contextParameter comment="" name="cookbookDBCompleted_Database" prompt="cookbookDBCompleted_Database?" promptNeeded="false" repositoryContextId="_bviz0DlLEeOkL67Ja7unaQ" type="id_String" value="cookbookDB"/>
   </context>
   <context confirmationNeeded="false" name="Default">
     <contextParameter comment="" name="cookbookDBCompleted_Server" prompt="cookbookDBCompleted_Server?" promptNeeded="false" repositoryContextId="_bviz0DlLEeOkL67Ja7unaQ" type="id_String" value="localhost"/>
     <contextParameter comment="" name="cookbookDBCompleted_Port" prompt="cookbookDBCompleted_Port?" promptNeeded="false" repositoryContextId="_bviz0DlLEeOkL67Ja7unaQ" type="id_String" value="3306"/>
     <contextParameter comment="" name="cookbookDBCompleted_AdditionalParams" prompt="cookbookDBCompleted_AdditionalParams?" promptNeeded="false" repositoryContextId="_bviz0DlLEeOkL67Ja7unaQ" type="id_String" value="noDatetimeStringSync=true"/>
-    <contextParameter comment="" name="cookbookDBCompleted_Password" prompt="cookbookDBCompleted_Password?" promptNeeded="false" repositoryContextId="_bviz0DlLEeOkL67Ja7unaQ" type="id_Password" value="YdTnhbqBAdo="/>
-    <contextParameter comment="" name="cookbookDBCompleted_Login" prompt="cookbookDBCompleted_Login?" promptNeeded="false" repositoryContextId="_bviz0DlLEeOkL67Ja7unaQ" type="id_String" value="talend"/>
+    <contextParameter comment="" name="cookbookDBCompleted_Password" prompt="cookbookDBCompleted_Password?" promptNeeded="false" repositoryContextId="_bviz0DlLEeOkL67Ja7unaQ" type="id_Password" value="qtZ7JLv1jK8jz91ECuJ94w=="/>
+    <contextParameter comment="" name="cookbookDBCompleted_Login" prompt="cookbookDBCompleted_Login?" promptNeeded="false" repositoryContextId="_bviz0DlLEeOkL67Ja7unaQ" type="id_String" value="root"/>
     <contextParameter comment="" name="cookbookDBCompleted_Database" prompt="cookbookDBCompleted_Database?" promptNeeded="false" repositoryContextId="_bviz0DlLEeOkL67Ja7unaQ" type="id_String" value="cookbookDB"/>
     <contextParameter comment="" name="cookbookData" prompt="cookbookData?" promptNeeded="false" repositoryContextId="_guSt8JzYEeK_Lq_Tgq3rQw" type="id_Directory" value="C:/cookbookData/"/>
   </context>
@@ -1442,13 +1442,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_34634a3b-11e6-446f-86a3-aec75b0f2c9b"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>NK0Bfpk1uaRxX02UN2TAZSp6le8dUZcgmdGO9TD4LHmVl/8/bnKQV7beEpKGW/Owx4wc2VoIaL51
-06TUA2iasA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_f4c19a86-6bcb-40b5-ade7-4d4d65089f45"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>tEJgAfBKxDBClLzn9wOL20qPWA4FU1LW05PmNYwpKX+lCeJt12eJJz/CM+X88Ws/cjOMQAO/Ufuy
-K+mNMHnmMw==</DigestValue></Reference></SignedInfo><SignatureValue>2YLrjRJpMFH692gwvgRfbr0CQD8bKjmtfSttb5XWPij8rROnTC8gLRbPdGL6KGV8W6p5lBFiXrvl
-SfY6GXcyzgDHdZhu7JBAAsHEomXDKn6FPm2L/d22I/bQbpxGabuhnt9bTmK+4+gt6362nAimRxi/
-U02K4Cru9ErJxJBSVOZ/YndlH0SUILGsRH81zrXyeZHwcZq18984MrEo0GKLcSUo69qzaGE6oUpw
-KDXN2SUI7t9GwqdmIoaWzB3eVoF2sOK9yfF9IJ3NcAs1xW/MZkLy7/dFWxciNeQ4m0vdJ/8KzIG2
-tcLbn7Fl/D5yKvMfbOjzq+88xHWnVd6C8rZZhg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f929534c-8b07-4b77-a658-6b64f6882638"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>+OgAe1R22OedJbHtFibRLv4uaaA2i9vNISFZT4XEeGlmp03AO+8vJpMCNLZ/r1YTUQxwjuE6mcbe
+aIvMg560+g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_1d1e0043-d7a4-498b-a483-2462da080409"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wVBwnxC+iTkRHv1yOxoQD1+/OiXrvdmXHq8etP95ifWGXFZBUbKXkmiHpv8VnQT5X/DFetaD45Sx
+8H3mibWfJg==</DigestValue></Reference></SignedInfo><SignatureValue>VMF4iaeXO9hkoI3LKOtMz6c7QB1CJqc3BkGt24Yf8Dvtx8K5KuvolsmjDK2mFCk8NZ/60pF18LoW
+4CoktysXgzNVG9BgqhSnAwYI/qMA4UFWu8WRa2KcyD93KLU8e2RVGDvyzsMJPntG0SqEMtjHDcNL
+lkPYZNdGQJYuGVftw2pv4lLjAogzLRhHSgzQtNf1S06eDNOjJMa4/JpJZ+ldwo2FdzuBgidvIWWG
+OZRK6ByDyWNNHRZJpr9S/KuH3rh6Lh5fBFXDdM8xfjtlmce6g9N5klDqLAhBqCBZ7kX8B2EQwOuo
+OpSXKphBT1moGoD/omA4q8uFdTVct+qtcOldcQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -1472,4 +1472,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_f4c19a86-6bcb-40b5-ade7-4d4d65089f45" Target="#_34634a3b-11e6-446f-86a3-aec75b0f2c9b"><Timestamp>2019-01-12 10:11:12</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_1d1e0043-d7a4-498b-a483-2462da080409" Target="#_f929534c-8b07-4b77-a658-6b64f6882638"><Timestamp>2019-01-12 10:14:08</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
