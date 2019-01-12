@@ -3,15 +3,15 @@
   <contextParameter comment="" name="cookbookDBCompleted_AdditionalParams" prompt="cookbookDBCompleted_AdditionalParams?" promptNeeded="false" type="id_String" value="noDatetimeStringSync=true" xmi:id="_PNT8ghS4EemVIPNaj6r_LQ"/>
   <contextParameter comment="" name="cookbookDBCompleted_Database" prompt="cookbookDBCompleted_Database?" promptNeeded="false" type="id_String" value="cookbookDB" xmi:id="_PNT8gxS4EemVIPNaj6r_LQ"/>
   <contextParameter comment="" name="cookbookDBCompleted_Server" prompt="cookbookDBCompleted_Server?" promptNeeded="false" type="id_String" value="localhost" xmi:id="_PNT8hBS4EemVIPNaj6r_LQ"/>
-  <contextParameter comment="" name="cookbookDBCompleted_Password" prompt="cookbookDBCompleted_Password?" promptNeeded="false" type="id_Password" value="YdTnhbqBAdo=" xmi:id="_PNT8hRS4EemVIPNaj6r_LQ"/>
-  <contextParameter comment="" name="cookbookDBCompleted_Login" prompt="cookbookDBCompleted_Login?" promptNeeded="false" type="id_String" value="talend" xmi:id="_PNT8hhS4EemVIPNaj6r_LQ"/>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f5c77716-74c4-4484-a8c2-a648fcbfc548"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>fVzLH0sgONzSmfIppFvGRYSQLj1o1QjgPYjcQ32q3QJI2giF3BIc9hw5HAbTnRVSl0xKwrUDHACb
-kSa5hC5Phw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c8114b7a-b435-4552-bb1e-34220ab96d82"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>2KsvB5+Ce1UMjDmOZtLdxgkgLspxBHYEZrDzRSUjUMSOSGO6ZwiSwbqHh5J3qfZ3MFh5nZTyepX5
-98W5Uy5usw==</DigestValue></Reference></SignedInfo><SignatureValue>hkQEwiBUVlru7J0oYJG07f/Gw3aHwI8m2rW7bWI3Dc2m6LJVW2/ux3ws9LA8FAzhrB5PObTGdd8z
-CnHsyqB5sAoX2V3ZM1V+M3DJL6ErSN7UdGYESn51rkS9V/YDH1aMl6iV12F5j/6tKQbG0Z2CAG5g
-gZ1eerCyyXWRv2SPdAi1AGpeMyDbD5dseZ3eOadJ0qqC9Pz2lcQ419tMjuG+pLlKxzPpvFG09862
-pvJ1IG4E/Ob2r3Fnj1xNmfF3SdiaNYlQ4UGohBYu6O0ACiTMeZb0/34OSwAUYirQTO8hC+hEWDzT
-YOJxPvtXE6rhUZsOJG5fNsKYeImEKenP/N/YHg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+  <contextParameter comment="" name="cookbookDBCompleted_Password" prompt="cookbookDBCompleted_Password?" promptNeeded="false" type="id_Password" value="qtZ7JLv1jK8jz91ECuJ94w==" xmi:id="_PNT8hRS4EemVIPNaj6r_LQ"/>
+  <contextParameter comment="" name="cookbookDBCompleted_Login" prompt="cookbookDBCompleted_Login?" promptNeeded="false" type="id_String" value="root" xmi:id="_PNT8hhS4EemVIPNaj6r_LQ"/>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_bbab9373-540b-42f2-924c-a3f313968e1e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>c9cgtBc/2kFM8Qr2h1jtB8TJtX+gdR+NBC5+rsmeLmPgvfZYX2hkaQcSIjYuVMJDcJh8yzqgjRI6
+y9XPteO97A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_fb23a581-1ee7-46db-a20c-b393788bc5ba"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>M73s/yc6jEM6Qs/0/mZCe6FQjToXFRLpGWvkzUV+IeFvUuW7E3YQApVeZkB8Ve/eLCOu6p0ebRt5
+lb8K7t60hA==</DigestValue></Reference></SignedInfo><SignatureValue>kkHE4WsWa9RV71qmLCJsef/DWyM+iAkyr3zcspxJoS1EJQVdgWBEHg0g73Vl6iZLXrLNtObSHFhE
+qt5XJ8i/camtyP9TvhkfBvPIn179gsePHB9fUhLBOIUwtuYTJ4HLNvp4Su9xs7NQuT95R9O0hSy/
+HFIUxXkyg3paSS+aVG+7yNkGk5UIr6voznGyancEIorjcm+pL49AKk3CvNaeQU8GS1ZE20/4CfCH
+8FtymudjZvYwrY82zy0HuOcZy8uAsGZRxYwBMMkaBx0tyyohNV4wbbQZa7OTxAIoJBWzm1Zi/c4g
+aMZ4BoMdqJGcSYZvUeUcQAZpUKWzR7LrhK3bog==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -35,4 +35,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c8114b7a-b435-4552-bb1e-34220ab96d82" Target="#_f5c77716-74c4-4484-a8c2-a648fcbfc548"><Timestamp>2019-01-10 09:15:13</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ContextType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_fb23a581-1ee7-46db-a20c-b393788bc5ba" Target="#_bbab9373-540b-42f2-924c-a3f313968e1e"><Timestamp>2019-01-12 10:14:04</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ContextType>
