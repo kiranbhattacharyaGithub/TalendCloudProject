@@ -194,13 +194,36 @@
     <module>jobs/process/chapter07/jo_cook_ch07_setupdbforexercises_0.1</module>
     <module>jobs/process/chapter10/jo_cook_ch10_0060_tjavarow_0.1</module>
     <module>jobs/process/new_jobscript_0.1</module>
+    <module>jobs/process/Data_Operation/KIRAN/DataOperation_Jobs/ABX_Expo_2018/abx18_interest_0.1</module>
+    <module>jobs/process/Data_Operation/KIRAN/DataOperation_Jobs/JLCNW18_PostShow/jlcnw18_bau_final_copy_0.1</module>
+    <module>jobs/process/Data_Operation/KIRAN/DataOperation_Jobs/ABX_Expo_2018/abx_sequence_0.1</module>
+    <module>jobs/process/Data_Operation/KIRAN/DataOperation_Jobs/ABX_Expo_2018/abx_final_0.1</module>
+    <module>jobs/process/Data_Operation/KIRAN/DataOperation_Jobs/JLCNW18_PostShow/jlc_jobs_sequence_copy_0.1</module>
+    <module>jobs/process/Data_Operation/KIRAN/DataOperation_Jobs/JCL_NW18/jlc_nw18_nob_0.1</module>
+    <module>jobs/process/Data_Operation/KIRAN/DataOperation_Jobs/JCL_NW18/jlc_jobs_sequence_0.1</module>
+    <module>jobs/process/Data_Operation/KIRAN/DataOperation_Jobs/JLCNW18_PostShow/jlc_nw18_static_copy_0.1</module>
+    <module>jobs/process/Data_Operation/KIRAN/DataOperation_Jobs/JCL_NW18/testjob_0.1</module>
+    <module>jobs/process/Data_Operation/KIRAN/DataOperation_Jobs/JCL_NW18/jlcnw18_bau_final_0.1</module>
+    <module>jobs/process/Data_Operation/KIRAN/DataOperation_Jobs/JCL_NW18/jlc_nw18_static_0.1</module>
+    <module>jobs/process/Data_Operation/KIRAN/DataOperation_Jobs/ABX_Expo_2018/dynamicque_xxxx_bau_demog_0.1</module>
+    <module>jobs/process/Data_Operation/KIRAN/DataOperation_Jobs/JCL_NW18/jlc_interest_0.1</module>
+    <module>jobs/process/Data_Operation/KIRAN/DataOperation_Jobs/JCL_NW18/jlc_visitortype_0.1</module>
+    <module>jobs/process/Data_Operation/KIRAN/DataOperation_Jobs/ABX_Expo_2018/copy_of_abx_expo_static_0.1</module>
+    <module>jobs/process/Data_Operation/KIRAN/DataOperation_Jobs/JLCNW18_PostShow/jlc_visitortype_copy_0.1</module>
+    <module>jobs/process/Data_Operation/KIRAN/DataOperation_Jobs/JLCNW18_PostShow/jlc_nw18_nob_copy_0.1</module>
+    <module>jobs/process/Data_Operation/KIRAN/DataOperation_Jobs/ABX_Expo_2018/abx_expo_static_0.1</module>
+    <module>jobs/process/Data_Operation/KIRAN/DataOperation_Jobs/JLCNW18_PostShow/demog_jlcnw18_xxxx_bau_copy_copy_0.1</module>
+    <module>jobs/process/Data_Operation/KIRAN/DataOperation_Jobs/JLCNW18_PostShow/jlc_interest_copy_0.1</module>
+    <module>jobs/process/Data_Operation/KIRAN/DataOperation_Jobs/JCL_NW18/demog_jlcnw18_xxxx_bau_copy_0.1</module>
+    <module>jobs/process/Data_Operation/KIRAN/DataOperation_Jobs/ABX_Expo_2018/abx18_nob_0.1</module>
+    <module>jobs/process/Data_Operation/KIRAN/DataOperation_Jobs/test_0.1</module>
   </modules>
   <properties>
     <talend.project.name>TALEND_PRACTICE</talend.project.name>
     <encoding>UTF-8</encoding>
     <talend.version>7.1.1</talend.version>
-    <maven.deploy.skip>true</maven.deploy.skip>
     <talend.docker.tag>${project.version}</talend.docker.tag>
+    <maven.deploy.skip>true</maven.deploy.skip>
     <talend.docker.name>${talend.project.name.lowercase}/${talend.job.folder}%a</talend.docker.name>
   </properties>
   <build>
