@@ -21,13 +21,12 @@
     <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
     <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
     <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
     <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
     <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
-    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
-    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" show="false" value=""/>
-    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="true"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;C:/cookbookData/chapter6/chapter6_jo_0020_cookbookContextFile.txt&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;=&quot;"/>
     <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
     <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -46,7 +45,7 @@
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
     <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
-    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="true"/>
     <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
     <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
     <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
@@ -55,7 +54,7 @@
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;D:/Talend/TalendProjects/.metadata&quot;"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Talend/Talend-Studio-20181026_1147-V7.1.1/workspace/.metadata&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
@@ -63,7 +62,7 @@
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
-    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_11"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12"/>
     <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
     <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
     <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
@@ -103,11 +102,17 @@
     <routinesParameter id="_Ab9TcGiSEeiYq6lvCthYwg" name="TalendDate"/>
     <routinesParameter id="_AdchMGiSEeiYq6lvCthYwg" name="TalendStringUtil"/>
     <routinesParameter id="_AczA8GiSEeiYq6lvCthYwg" name="TalendString"/>
+    <routinesParameter id="_qjtiYBS3EemVIPNaj6r_LQ" name="DQTechnical"/>
+    <routinesParameter id="_qiBgUBS3EemVIPNaj6r_LQ" name="DataMasking"/>
+    <routinesParameter id="_qjkYcBS3EemVIPNaj6r_LQ" name="DataQualityDependencies"/>
+    <routinesParameter id="_qjguEBS3EemVIPNaj6r_LQ" name="DataQuality"/>
+    <routinesParameter id="_qjop4BS3EemVIPNaj6r_LQ" name="DqStringHandling"/>
+    <routinesParameter id="_qkiBwBS3EemVIPNaj6r_LQ" name="SQLike"/>
   </parameters>
   <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_3"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;D:/Talend/TalendProjects/TALEND_PROJECT/Informa_Projects/DataOperation/JLC/DataIn/Temp/JLCNW18_Static.xlsx&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Talend-Project/DataOperation/JLC/DataIn/Temp/JLCNW18_Static.xlsx&quot;"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="true"/>
     <elementParameter field="TABLE" name="SHEETLIST" show="false"/>
     <elementParameter field="TEXT" name="HEADER" value="1"/>
@@ -788,6 +793,7 @@
     <elementParameter field="CHECK" name="NOVALIDATE_ON_CELL" show="false" value="false"/>
     <elementParameter field="CHECK" name="SUPPRESS_WARN" show="false" value="false"/>
     <elementParameter field="CLOSED_LIST" name="GENERATION_MODE" value="USER_MODE"/>
+    <elementParameter field="CHECK" name="INCLUDE_PHONETICRUNS" show="false" value="true"/>
     <elementParameter field="TEXT" name="LABEL" value="JLCNW18_Static"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFileInputExcel_3">
@@ -1067,6 +1073,8 @@
     <elementParameter field="IMAGE" name="PREVIEW" value="_7hvSQOcvEei0zvVf679utw-tMap_2-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
@@ -1491,7 +1499,7 @@
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;D:/Talend/TalendProjects/TALEND_PROJECT/Informa_Projects/DataOperation/JLC/DataOut/JLCNW18_&quot;+TalendDate.getDate(&quot;CCYYMMDD&quot;)+&quot;_BAU.xlsx&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Talend-Project/DataOperation/JLC/DataOut/JLCNW18_&quot;+TalendDate.getDate(&quot;CCYYMMDD&quot;)+&quot;_BAU.xlsx&quot;"/>
     <elementParameter field="TEXT" name="SHEETNAME" value="&quot;Sheet1&quot;"/>
     <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
     <elementParameter field="CHECK" name="APPEND_FILE" value="false"/>
@@ -1913,7 +1921,7 @@
   <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_1"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;D:/Talend/TalendProjects/TALEND_PROJECT/Informa_Projects/DataOperation/JLC/DataIn/Temp/JCL_NOB_Temp.xlsx&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Talend-Project/DataOperation/JLC/DataIn/Temp/JCL_NOB_Temp.xlsx&quot;"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="true"/>
     <elementParameter field="TABLE" name="SHEETLIST" show="false"/>
     <elementParameter field="TEXT" name="HEADER" value="1"/>
@@ -1949,6 +1957,7 @@
     <elementParameter field="CHECK" name="NOVALIDATE_ON_CELL" show="false" value="false"/>
     <elementParameter field="CHECK" name="SUPPRESS_WARN" show="false" value="false"/>
     <elementParameter field="CLOSED_LIST" name="GENERATION_MODE" value="USER_MODE"/>
+    <elementParameter field="CHECK" name="INCLUDE_PHONETICRUNS" show="false" value="true"/>
     <elementParameter field="TEXT" name="LABEL" value="JCL_NOB_Temp"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFileInputExcel_1">
@@ -1965,7 +1974,7 @@
   <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_2"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;D:/Talend/TalendProjects/TALEND_PROJECT/Informa_Projects/DataOperation/JLC/DataIn/Temp/JLC_Interest.xlsx&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Talend-Project/DataOperation/JLC/DataIn/Temp/JLC_Interest.xlsx&quot;"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="true"/>
     <elementParameter field="TABLE" name="SHEETLIST" show="false"/>
     <elementParameter field="TEXT" name="HEADER" value="1"/>
@@ -2001,6 +2010,7 @@
     <elementParameter field="CHECK" name="NOVALIDATE_ON_CELL" show="false" value="false"/>
     <elementParameter field="CHECK" name="SUPPRESS_WARN" show="false" value="false"/>
     <elementParameter field="CLOSED_LIST" name="GENERATION_MODE" value="USER_MODE"/>
+    <elementParameter field="CHECK" name="INCLUDE_PHONETICRUNS" show="false" value="true"/>
     <elementParameter field="TEXT" name="LABEL" value="JLC_Interest"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFileInputExcel_2">
@@ -2017,7 +2027,7 @@
   <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_4"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;D:/Talend/TalendProjects/TALEND_PROJECT/Informa_Projects/DataOperation/JLC/DataIn/Temp/JCL_VisitorTemp.xlsx&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Talend-Project/DataOperation/JLC/DataIn/Temp/JCL_VisitorTemp.xlsx&quot;"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="true"/>
     <elementParameter field="TABLE" name="SHEETLIST" show="false"/>
     <elementParameter field="TEXT" name="HEADER" value="1"/>
@@ -2058,6 +2068,7 @@
     <elementParameter field="CHECK" name="NOVALIDATE_ON_CELL" show="false" value="false"/>
     <elementParameter field="CHECK" name="SUPPRESS_WARN" show="false" value="false"/>
     <elementParameter field="CLOSED_LIST" name="GENERATION_MODE" value="USER_MODE"/>
+    <elementParameter field="CHECK" name="INCLUDE_PHONETICRUNS" show="false" value="true"/>
     <elementParameter field="TEXT" name="LABEL" value="JCL_VisitorTemp"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFileInputExcel_4">
@@ -2119,13 +2130,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_9f108df3-b419-4640-8c2d-6856a4ab2b14"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>1F7ePv5xtg99tJERHFbsBojeWgupF6uqbj1egRafOmXdzGRSqbaB909/bYzgVw6QwykQtOeK6HcU
-u9PV+s8j3Q==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_106a3065-501c-443a-8946-df31fb2de0a2"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Ul+JenL4xjmwoSAFeKggVvMc9KODlXqKuZt7zpjfwyynJk37tpeKjQ2O0gppBskKObwJvwJu0YkY
-SrGhhbQjmQ==</DigestValue></Reference></SignedInfo><SignatureValue>rw6fKHfmNFL1ke0AwmjQ6pmC08f968COv3Xu2lBa0hZwNyEKrVejabbmH1jY82YqvFav2YZOdY9V
-4o47rx3DriwS20j2bUcymTMZi5rHDvTIGCm7hgZQ3BMwWSrqI/tenuXJt1t2q4PSDBQhyI9a+3Ex
-574InLIYBQCjA6HPPXpxD7b6gUcKjo68Xwjn9HXgEhxbmbhMbrnxSfqlOWPXMmrh26Muf2S/33Ce
-PryfcpVX9jeJkdi8kXjq1IgU0lQAT1Lz7BTeR/2BORMV+jLh2CS8bA/pe33Rg+QifCDhzaE3k2Ue
-58lnc7NtquRWSaV23yOEdy0QBkQbFfFi979tvQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_74390755-c93d-4937-a03b-0e592b0751aa"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>TnuCQLSKMor1/ozviJGfKnUL3L4iNf6psaSoX08kCkvEpNP7bvMxqSevOGMWr5t6xNgc0xGDFF6r
+/XqJX6cTow==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_29bce801-4ac7-4999-833b-5066c79421d7"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>k1GGirgnb17Go9yMjz4wpWtXORTVDNRJ5yvX9FQcDx7E87DjOtHZN8H9nRtgd3sINO5A9+UiUVLe
+xR7LbE8duA==</DigestValue></Reference></SignedInfo><SignatureValue>snNOvOQC3WMzPCMwttwCJ/vHRwzah5mkQo0L25eEXqBo79+o9jBHEbfCUMvlzh1bb5bicRSubdSJ
+Re/yMJP29+hoyuPpRAZdrVGz5/ry25M7fewMN0VJuf4ZOj9AyVbXC7WaITWIF0sHewyev64eL07f
+OtujiUfVEBXkykQACAAV6u5l22KaCn/oWIzpf4gF2W0K9/Kc8EGtXbvZlDtnyO+M27kdjWV5hySE
+D/Oqj8mz6hv+FzdLDA1hOaql+5jbtuCr7ZK290QGc7clvJmjYdwGFGwf2meyvJiqsNBq28LJjgNo
+G7KQX4xi6XWOWSvXT9tfkbxe/RPAvPQdGsoLDQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -2149,4 +2160,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_106a3065-501c-443a-8946-df31fb2de0a2" Target="#_9f108df3-b419-4640-8c2d-6856a4ab2b14"><Timestamp>2019-01-15 08:09:03</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_29bce801-4ac7-4999-833b-5066c79421d7" Target="#_74390755-c93d-4937-a03b-0e592b0751aa"><Timestamp>2019-01-15 08:23:52</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
