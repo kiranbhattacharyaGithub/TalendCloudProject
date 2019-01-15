@@ -84,7 +84,7 @@
     </dependency>
     <dependency>
       <groupId>org.example.talend_practice.job</groupId>
-      <artifactId>JLC_Interest</artifactId>
+      <artifactId>JLC_VisitorType</artifactId>
       <version>0.1.0</version>
     </dependency>
   </dependencies>
