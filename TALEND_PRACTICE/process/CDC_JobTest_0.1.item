@@ -216,7 +216,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="128">
+  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="448" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_tR5G0BefEemIeoNxViYF6Q"/>
@@ -229,11 +229,11 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;cookbookDB&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" value="EHbES1ZvV8Pc6X3drVqYEA=="/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;customer&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;cdc_change&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:REPOSITORY_SCHEMA_TYPE" show="false" value="_tR5G0BefEemIeoNxViYF6Q - customer"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:REPOSITORY_SCHEMA_TYPE" show="false" value="_tR5G0BefEemIeoNxViYF6Q - cdc_change"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -290,8 +290,8 @@
     <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" show="false" value="false"/>
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="customer" name="tDBOutput_1">
-      <column comment="" key="false" length="10" name="id" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+    <metadata connector="FLOW" label="cdc_change" name="tDBOutput_1">
+      <column comment="" key="true" length="10" name="id" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="50" name="name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -311,8 +311,8 @@
       </column>
       <additionalProperties key="Comment" value=""/>
     </metadata>
-    <metadata connector="REJECT" label="customer" name="REJECT">
-      <column comment="" key="false" length="10" name="id" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+    <metadata connector="REJECT" label="cdc_change" name="REJECT">
+      <column comment="" key="true" length="10" name="id" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="50" name="name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -344,13 +344,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c9cc8dc0-9401-4e82-9e72-83a92c5af1de"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>BJCYZtasj5A7ufVKBywU/Ne0fzICKGwa0fRBjNZaB9+BKPOMDlQ9m1DmLstzy0wbGB2CLzuv/ABk
-C3/u/6QQ9g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_40d76813-a11a-4062-9b08-16e1a9841e87"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>PKYXzJU0sA1sfrF1+WlL+GXpn8i/zXXRfKdYu/TyGcWB9j50nTX2sEEDk2zExFnB+xLDd8cnYAYm
-Gu+GSpFk9g==</DigestValue></Reference></SignedInfo><SignatureValue>Ra26BLyFCFexJewJ4E6qqg9jU0fo+r7ynjxDJXgSGgC/w+nk//ZdypaImfnum1guymwd8ZgvLf0H
-lSMEHtW4WHZ1fHIy5Z5IfC4do00+GrcaBC2MojqL/T8bh4MV40CEDgIhdYs8LmeoTPjRTENUNSaQ
-zRPMdE8KG/ae6sEDysualsDZZW1g702I0e1OpsdjWDexg6Txvdy4qg5ULkXDBumAFRKNw1qJyjXy
-EJD2YqtMds6V7VKUhoz69D0hr/q0eXKVuUOzeMebfxtzQ17NqRVIilbgq/9F+T0r5jIe3q5J/toA
-Elg0WsswN6UK1rBfNZPlnURQwAt0n/iIt1XsrQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b7b14d52-ccbc-4e8b-b165-4e23706a537c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>L1wOquzsGNuG+hSh/l1NsI25pJiwm7w2/X5d9dDqpVMO69QDSBBB4io/jcgFj8D92yPmSbHDXsa9
+7W/Yx12Auw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_9e12bfb4-2a15-4091-a47c-bf3dab103711"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>DKV5HVVwg2zdR8QdcZx2rCSqJgNvOf2HNT4UVPvLdpA2tbclZdg9AOunPY186vNOXjyLzrMgpevC
+Fo0IpXoC9w==</DigestValue></Reference></SignedInfo><SignatureValue>g+n1I72lqh2A62qrT8x6aNTY9gd3kpKL5JiwXx0TWCAoVKM4wu7e/2dCVbR3fhJG558erCJf/ygr
+17nMT59Ds+/HIgOA44BTSRVwvPbHHsug/1OSEFEQXpgMfEz5MeH/k2t1uzA67to6wluWg3oFSSi9
+hR5q/KY5s5WJGL5bGOw5A2hTzgU32dHgkAPmsw9H3YL+bhGAh5Bb2EqPvdQ2luF5GCQM28d9FC2X
+JShYEywc7sJrPmNXxqS7bwNSpMwmFXM9zloHWrV3+Gwddj6L4/yFEk1vsRLa7TSTdi00ORw4lUcK
+TmpxlSFWYv2OR3cWgXJQvhHUnJNAJKHgYSR1Tw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -374,4 +374,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_40d76813-a11a-4062-9b08-16e1a9841e87" Target="#_c9cc8dc0-9401-4e82-9e72-83a92c5af1de"><Timestamp>2019-01-16 11:30:04</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_9e12bfb4-2a15-4091-a47c-bf3dab103711" Target="#_b7b14d52-ccbc-4e8b-b165-4e23706a537c"><Timestamp>2019-01-16 11:57:25</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
