@@ -9151,6 +9151,10 @@
     "type" : "job"
   },
   "relatedItems" : [ {
+    "id" : "_tR5G0BefEemIeoNxViYF6Q",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
     "id" : "DQTechnical",
     "version" : "Latest",
     "type" : "routine"
@@ -9210,6 +9214,10 @@
     "id" : "TalendStringUtil",
     "version" : "Latest",
     "type" : "routine"
+  }, {
+    "id" : "_tR5G0BefEemIeoNxViYF6Q - customer",
+    "version" : "Latest",
+    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
