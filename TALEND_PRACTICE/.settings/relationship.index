@@ -7624,7 +7624,7 @@
     "version" : "Latest",
     "type" : "context"
   }, {
-    "id" : "_0YMRkDocEeOFxYerR36Ymw",
+    "id" : "_YsoccDlLEeOkL67Ja7unaQ",
     "version" : "Latest",
     "type" : "property"
   }, {
@@ -7699,10 +7699,6 @@
     "id" : "validationCompleted",
     "version" : "Latest",
     "type" : "routine"
-  }, {
-    "id" : "_0YMRkDocEeOFxYerR36Ymw - customer",
-    "version" : "Latest",
-    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
