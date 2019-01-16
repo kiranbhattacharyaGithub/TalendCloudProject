@@ -36,7 +36,6 @@
     <module>jobs/process/chapter11/jo_cook_ch11_0010_helloworld_0.1</module>
     <module>jobs/process/chapter09Completed/jo_cook_ch09_0090_losslessqueuescompleted_0.1</module>
     <module>jobs/process/chapter06Completed/jo_cook_ch06_0040_turnoffimplicitcompleted_0.1</module>
-    <module>jobs/process/chapter08/jo_cook_ch08_0010_fileappend_0.1</module>
     <module>jobs/process/chapter08Completed/jo_cook_ch08_0080_useheaderandtrailerinfocompleted_0.1</module>
     <module>jobs/process/chapter03/jo_cook_ch03_0020_schemacompliance_0.1</module>
     <module>jobs/process/chapter11Completed/jo_cook_ch11_0060_task1completed_0.1</module>
@@ -49,8 +48,6 @@
     <module>jobs/process/chapter07Completed/jo_cook_ch07_0020_contextinquerycompleted_0.1</module>
     <module>jobs/process/chapter10Completed/jo_cook_ch10_0080_tcontextdumpcompleted_0.1</module>
     <module>jobs/process/chapter08Completed/jo_cook_ch08_0120_multiplefilescompleted_0.1</module>
-    <module>jobs/process/chapter08/jo_cook_ch08_0030_temporaryfile_0.1</module>
-    <module>jobs/process/chapter08/jo_cook_ch08_0020_readregexdata_0.1</module>
     <module>jobs/process/chapter10/jo_cook_ch10_0010_findcompilationerrors_0.1</module>
     <module>jobs/process/chapter11/jo_cook_ch11_0020_differentcontext_0.1</module>
     <module>jobs/process/chapter10/jo_cook_ch10_0110_complextestdata_0.1</module>
@@ -70,12 +67,9 @@
     <module>jobs/process/chapter07/jo_cook_ch07_0090_rejectsanderrors_0.1</module>
     <module>jobs/process/chapter08Completed/jo_cook_ch08_0130_controlfilecompleted_0.1</module>
     <module>jobs/process/chapter05/jo_cook_ch05_0050_externalclasses_0.1</module>
-    <module>jobs/process/chapter08/jo_cook_ch08_0120_multiplefiles_0.1</module>
     <module>jobs/process/chapter04Completed/jo_cook_ch04_0050_tmapinputfiltercompleted_0.1</module>
     <module>jobs/process/chapter08Completed/jo_cook_ch08_0140_filesfrominputdatacompleted_0.1</module>
     <module>jobs/process/chapter02/jo_cook_ch02_0020_builtinschema_0.1</module>
-    <module>jobs/process/chapter08/jo_cook_ch08_0090_createheaderandtrailer_0.1</module>
-    <module>jobs/process/chapter08/jo_cook_ch08_0060_headtrailtmap_0.1</module>
     <module>jobs/process/chapter04Completed/jo_cook_ch04_0060_multipleoutputscompleted_0.1</module>
     <module>jobs/process/chapter11Completed/jo_cook_ch11_0070_task1completed_0.1</module>
     <module>jobs/process/chapter10/jo_cook_ch10_0050_tlogrow_0.1</module>
@@ -93,7 +87,6 @@
     <module>jobs/process/chapter11Completed/jo_cook_ch11_0070_childparameterscompleted_0.1</module>
     <module>jobs/process/chapter03Completed/jo_cook_ch03_0020_schemacompliancecompleted_0.1</module>
     <module>jobs/process/chapter11/jo_cook_ch11_0070_task1_0.1</module>
-    <module>jobs/process/chapter08/jo_cook_ch08_0100_basicfilecommands_0.1</module>
     <module>jobs/process/chapter07/jo_cook_ch07_0030_printinputquery_0.1</module>
     <module>jobs/process/chapter11Completed/jo_cook_ch11_0060_childreturncodesnodiecompleted_0.1</module>
     <module>jobs/process/chapter08Completed/jo_cook_ch08_0060_headtrailtmapcompleted_0.1</module>
@@ -105,7 +98,6 @@
     <module>jobs/process/chapter04/jo_cook_ch04_0010_basicmapping_0.1</module>
     <module>jobs/process/chapter08Completed/jo_cook_ch08_0020_readregexdatacompleted_0.1</module>
     <module>jobs/process/chapter02Completed/jo_cook_ch02_0030_copyschemacompleted_0.1</module>
-    <module>jobs/process/chapter08/jo_cook_ch08_0040_temporarydatathashmap_0.1</module>
     <module>jobs/process/chapter10Completed/jo_cook_ch10_0070_loggingwithtjavacompleted_0.1</module>
     <module>jobs/process/chapter10/jo_cook_ch10_0130_exceltestdataload_0.1</module>
     <module>jobs/process/chapter07/jo_cook_ch07_0050_printoutputsql_0.1</module>
@@ -121,7 +113,6 @@
     <module>jobs/process/chapter10Completed/jo_cook_ch10_0130_exceltestdataloadcompleted_0.1</module>
     <module>jobs/process/chapter10/jo_cook_ch10_0100_trowgenerator_0.1</module>
     <module>jobs/process/chapter10Completed/jo_cook_ch10_0110_complextestdatacompleted_0.1</module>
-    <module>jobs/process/chapter08/jo_cook_ch08_0110_fileinformation_0.1</module>
     <module>jobs/process/chapter04Completed/jo_cook_ch04_0010_basicmappingcompleted_0.1</module>
     <module>jobs/process/chapter04/jo_cook_ch04_0090_prepthedatabase_0.1</module>
     <module>jobs/process/chapter10Completed/jo_cook_ch10_0060_tjavarowcompleted_0.1</module>
@@ -147,7 +138,6 @@
     <module>jobs/process/chapter10/jo_cook_ch10_0120_randomtestdatalookups_0.1</module>
     <module>jobs/process/chapter11/jo_cook_ch11_0060_errorhandler_0.1</module>
     <module>jobs/process/chapter11/jo_cook_ch11_0040_task3_0.1</module>
-    <module>jobs/process/chapter08/jo_cook_ch08_0080_useheaderandtrailerinfo_0.1</module>
     <module>jobs/process/chapter11/jo_cook_ch11_0070_childparameters_0.1</module>
     <module>jobs/process/chapter04/jo_cook_ch04_0060_multipleoutputs_0.1</module>
     <module>jobs/process/chapter04Completed/jo_cook_ch04_0020_usingexpressionscompleted_0.1</module>
@@ -165,13 +155,11 @@
     <module>jobs/process/chapter11/jo_cook_ch11_0040_task2_0.1</module>
     <module>jobs/process/chapter06/jo_cook_ch06_0010_addcontextgroup_0.1</module>
     <module>jobs/process/chapter07Completed/jo_cook_ch07_0110_surrogatekeyscompleted_0.1</module>
-    <module>jobs/process/chapter08/jo_cook_ch08_0130_controlfile_0.1</module>
     <module>jobs/process/chapter07Completed/jo_cook_ch07_0120_inprocessdatabasecompleted_0.1</module>
     <module>jobs/process/chapter04/jo_cook_ch04_0050_tmapinputfilter_0.1</module>
     <module>jobs/process/chapter07Completed/jo_cook_ch07_0030_printinputquerycompleted_0.1</module>
     <module>jobs/process/chapter11Completed/jo_cook_ch11_0050_task1completed_0.1</module>
     <module>jobs/process/chapter05/jo_cook_ch05_0000_tjava_0.1</module>
-    <module>jobs/process/chapter08/jo_cook_ch08_0070_headtrailtmapnotype_0.1</module>
     <module>jobs/process/chapter10Completed/jo_cook_ch10_0100_trowgeneratorcompleted_0.1</module>
     <module>jobs/process/chapter03Completed/jo_cook_ch03_0010_validationsubjobcompleted_0.1</module>
     <module>jobs/process/chapter09/jo_cook_ch09_0080_readwritequeue_0.1</module>
@@ -187,7 +175,6 @@
     <module>jobs/process/chapter04/jo_cook_ch04_0030_ternaryexpressions_0.1</module>
     <module>jobs/process/chapter10/jo_cook_ch10_0070_loggingwithtjava_0.1</module>
     <module>jobs/process/chapter08Completed/jo_cook_ch08_0030_temporaryfilecompleted_0.1</module>
-    <module>jobs/process/chapter08/jo_cook_ch08_0140_filesfrominputdata_0.1</module>
     <module>jobs/process/chapter09Completed/jo_cook_ch09_0050_writecomplexxmlcompleted_0.1</module>
     <module>jobs/process/chapter11/jo_cook_ch11_0060_task2_0.1</module>
     <module>jobs/process/chapter09Completed/jo_cook_ch09_0070_consumerestservicecompleted_0.1</module>
@@ -219,6 +206,19 @@
     <module>jobs/process/Data_Operation/DataOperation_Jobs/test_0.1</module>
     <module>jobs/process/Data_Operation/DataOperation_Jobs/JCL_NW18/test_subjobs_0.1</module>
     <module>jobs/process/chapter07/jo_cook_ch07_0100_tablemanagement_0.1</module>
+    <module>jobs/process/chapter09Completed/chapter08/jo_cook_ch08_0010_fileappend_0.1</module>
+    <module>jobs/process/chapter09Completed/chapter08/jo_cook_ch08_0020_readregexdata_0.1</module>
+    <module>jobs/process/chapter09Completed/chapter08/jo_cook_ch08_0030_temporaryfile_0.1</module>
+    <module>jobs/process/chapter09Completed/chapter08/jo_cook_ch08_0040_temporarydatathashmap_0.1</module>
+    <module>jobs/process/chapter09Completed/chapter08/jo_cook_ch08_0060_headtrailtmap_0.1</module>
+    <module>jobs/process/chapter09Completed/chapter08/jo_cook_ch08_0070_headtrailtmapnotype_0.1</module>
+    <module>jobs/process/chapter09Completed/chapter08/jo_cook_ch08_0080_useheaderandtrailerinfo_0.1</module>
+    <module>jobs/process/chapter09Completed/chapter08/jo_cook_ch08_0090_createheaderandtrailer_0.1</module>
+    <module>jobs/process/chapter09Completed/chapter08/jo_cook_ch08_0100_basicfilecommands_0.1</module>
+    <module>jobs/process/chapter09Completed/chapter08/jo_cook_ch08_0110_fileinformation_0.1</module>
+    <module>jobs/process/chapter09Completed/chapter08/jo_cook_ch08_0120_multiplefiles_0.1</module>
+    <module>jobs/process/chapter09Completed/chapter08/jo_cook_ch08_0130_controlfile_0.1</module>
+    <module>jobs/process/chapter09Completed/chapter08/jo_cook_ch08_0140_filesfrominputdata_0.1</module>
   </modules>
   <properties>
     <talend.project.name>TALEND_PRACTICE</talend.project.name>
