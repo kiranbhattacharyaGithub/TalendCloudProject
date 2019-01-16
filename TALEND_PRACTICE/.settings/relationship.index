@@ -7624,7 +7624,31 @@
     "version" : "Latest",
     "type" : "context"
   }, {
+    "id" : "_0YMRkDocEeOFxYerR36Ymw",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "DQTechnical",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "DataMasking",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
     "id" : "DataOperation",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "DataQuality",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "DataQualityDependencies",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "DqStringHandling",
     "version" : "Latest",
     "type" : "routine"
   }, {
@@ -7637,6 +7661,10 @@
     "type" : "routine"
   }, {
     "id" : "Relational",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "SQLike",
     "version" : "Latest",
     "type" : "routine"
   }, {
@@ -7656,6 +7684,10 @@
     "version" : "Latest",
     "type" : "routine"
   }, {
+    "id" : "TalendStringUtil",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
     "id" : "externalValidationCompleted",
     "version" : "Latest",
     "type" : "routine"
@@ -7667,6 +7699,10 @@
     "id" : "validationCompleted",
     "version" : "Latest",
     "type" : "routine"
+  }, {
+    "id" : "_0YMRkDocEeOFxYerR36Ymw - customer",
+    "version" : "Latest",
+    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
