@@ -9214,14 +9214,6 @@
     "id" : "TalendStringUtil",
     "version" : "Latest",
     "type" : "routine"
-  }, {
-    "id" : "_tR5G0BefEemIeoNxViYF6Q - cdc_change",
-    "version" : "Latest",
-    "type" : "schema"
-  }, {
-    "id" : "_tR5G0BefEemIeoNxViYF6Q - customer",
-    "version" : "Latest",
-    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
