@@ -7,6 +7,12 @@
     <contextParameter comment="" name="cookbookDBCompleted_AdditionalParams" prompt="cookbookDBCompleted_AdditionalParams?" promptNeeded="false" repositoryContextId="_bviz0DlLEeOkL67Ja7unaQ" type="id_String" value="noDatetimeStringSync=true"/>
     <contextParameter comment="" name="cookbookDBCompleted_Login" prompt="cookbookDBCompleted_Login?" promptNeeded="false" repositoryContextId="_bviz0DlLEeOkL67Ja7unaQ" type="id_String" value="root"/>
     <contextParameter comment="" name="cookbookDBCompleted_Database" prompt="cookbookDBCompleted_Database?" promptNeeded="false" repositoryContextId="_bviz0DlLEeOkL67Ja7unaQ" type="id_String" value="cookbookDB"/>
+    <contextParameter comment="" name="cookbookDB_Server" prompt="cookbookDB_Server?" promptNeeded="false" repositoryContextId="_6pgeoDocEeOFxYerR36Ymw" type="id_String" value="localhost"/>
+    <contextParameter comment="" name="cookbookDB_Login" prompt="cookbookDB_Login?" promptNeeded="false" repositoryContextId="_6pgeoDocEeOFxYerR36Ymw" type="id_String" value="root"/>
+    <contextParameter comment="" name="cookbookDB_Port" prompt="cookbookDB_Port?" promptNeeded="false" repositoryContextId="_6pgeoDocEeOFxYerR36Ymw" type="id_String" value="3306"/>
+    <contextParameter comment="" name="cookbookDB_Database" prompt="cookbookDB_Database?" promptNeeded="false" repositoryContextId="_6pgeoDocEeOFxYerR36Ymw" type="id_String" value="cookbookDB"/>
+    <contextParameter comment="" name="cookbookDB_Password" prompt="cookbookDB_Password?" promptNeeded="false" repositoryContextId="_6pgeoDocEeOFxYerR36Ymw" type="id_Password" value="qtZ7JLv1jK8jz91ECuJ94w=="/>
+    <contextParameter comment="" name="cookbookDB_AdditionalParams" prompt="cookbookDB_AdditionalParams?" promptNeeded="false" repositoryContextId="_6pgeoDocEeOFxYerR36Ymw" type="id_String" value="noDatetimeStringSync=true"/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
@@ -101,11 +107,6 @@
     <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
     <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
-    <elementParameter field="CHECK" name="UPDATE_COMPONENTS" value="false"/>
-    <elementParameter field="CHECK" name="IMPLICT_DEFAULT_PROJECTSETTING" value="true"/>
-    <elementParameter field="PROPERTY_TYPE" name="PROPERTY_TYPE_IMPLICIT_CONTEXT" value=""/>
-    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value="BUILT_IN"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value=""/>
     <routinesParameter id="_wcYqgJZhEeKJZ_KbMIifHw" name="DataOperation"/>
     <routinesParameter id="_wesXoJZhEeKJZ_KbMIifHw" name="Mathematical"/>
     <routinesParameter id="_wexQIJZhEeKJZ_KbMIifHw" name="Numeric"/>
@@ -127,6 +128,7 @@
   </parameters>
   <node componentName="tMysqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMysqlRow_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_YsoccDlLEeOkL67Ja7unaQ"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
@@ -163,6 +165,44 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tMysqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBRow_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_0YMRkDocEeOFxYerR36Ymw"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="HOST" value="context.cookbookDB_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.cookbookDB_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.cookbookDB_Database"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
+    <elementParameter field="TEXT" name="USER" value="context.cookbookDB_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kufZ7RaA/hwBUjll7NLWOteRg0Peoi0N4Ao="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="create table 'test_mysqlrow' &#13;&#10;'id' int(11),&#13;&#10;'data' varchar(45) default null,&#13;&#10;primary key('id')&#13;&#10;)"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.cookbookDB_AdditionalParams"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="cookbookDB"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBRow_1"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMysqlRow_1"/>
@@ -170,13 +210,18 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e15a98d8-920e-4b65-b866-dc492a50ebbf"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>uxQBCKvBPoHd5MXmQ68CsgGXK+ItDpG997dlf7P37G9jl9tuFY7H8suXKuVgs6+xiBn4cqfabiQK
-BW1SlOQpiQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c4707154-a7bb-42cf-8b16-9709da6a2bd1"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>CjcB2tnVzi0K5pItEY9+XIeqhQabb2s9En3QUYWp91PE8lg+Fc5l0YSJOHB+AQERzz2ufkKK0b4V
-QhfA600V/g==</DigestValue></Reference></SignedInfo><SignatureValue>vwqtmBMyXFXDjpvpwKLnUlBuUPTBi2y+OvaRd8S93rHoJTStMS63YxkzdW05eNrTe6tSu0+RBOV1
-bpc7FWDckkRSqrkKFAVXXLRtINLBg+mFQoCiEU6RxjCQVhXveu6Ja6huYx3WYkuFAWTaHnKeIQBc
-5W84+cwANCt/Sq/8Uup4hCLRrbChOmW4MuyxukaLRqxL92VWcOtXEuqtMOju18c2dRraepJSRH8+
-r8Jlflbkz69BrA2yXp/FCbTSTf5aG5yD5QVee+eigF74GtsKjPcD9Sbg6afpuzK1VlBuP75C9ayw
-2J+UJOSI87npToM14pdC0C6Q3yuYEqAiNm8mWw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBRow_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_073da877-f1fe-40bd-904d-82b2cf00ea1a"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Gfjj0VCl6VCkzzFsZfywGSI+/1dKPMcNsMLJ9PKSVlsd2jJnRr0OOOXj03EQTzXTKp6KtUpuXVS3
+C7ZqF3sl6Q==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_54d29cd2-affd-4a11-a0cc-20c9809092a7"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>0iRdz7YeLkg0wUJEbcKfmZXEi5Oe2a+evQZCKmZu1KEr7ldJuzEqq377TaDvoIjHI+qIB+rTQEB9
+RgfmvfYAvA==</DigestValue></Reference></SignedInfo><SignatureValue>1M9VaA/KalmVrlHKAeKS1jhjL4zG4gf0OhE2ePHNO57NxVxp4e/XpYmTXZ9al9Ms/B2UY5JMryWz
+GE24nuKFCBG3pNQyrXh2Smn5pBTKB8sJ9777B7t3kOLtuEVrZPd6UX0c6JJDtzbUr8ZIyMWcW9RC
+Ir9RrnP3L5v1XmlL18hyGEno1rnLSx34V12tJtitX0Mc+1tDL8olcFq24U5d+HAPtvX0UEQExThk
++S4eFV+6daRiqmN2+Aw3pgK6F5dMrr0ih0JQ+x2sUZ9Fda/cnk84Wq5vyPgaJjWeFR0sI6gZy2ef
+AC/y4LSui762jAN9JPqsSNbh5ITRgRC/R0deOA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -200,4 +245,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c4707154-a7bb-42cf-8b16-9709da6a2bd1" Target="#_e15a98d8-920e-4b65-b866-dc492a50ebbf"><Timestamp>2019-01-16 02:22:03</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_54d29cd2-affd-4a11-a0cc-20c9809092a7" Target="#_073da877-f1fe-40bd-904d-82b2cf00ea1a"><Timestamp>2019-01-16 02:27:04</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
