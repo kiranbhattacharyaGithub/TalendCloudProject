@@ -218,7 +218,7 @@
     <module>jobs/process/Data_Operation/DataOperation_Jobs/JLCNW18_PostShow/jlcnw18_bau_final_copy_0.1</module>
     <module>jobs/process/Data_Operation/DataOperation_Jobs/test_0.1</module>
     <module>jobs/process/Data_Operation/DataOperation_Jobs/JCL_NW18/test_subjobs_0.1</module>
-    <module>jobs/process/chapter07/jo_cook_ch07_0100_tablemanagementcompleted_copy_0.1</module>
+    <module>jobs/process/chapter07/jo_cook_ch07_0100_tablemanagement_0.1</module>
   </modules>
   <properties>
     <talend.project.name>TALEND_PRACTICE</talend.project.name>
