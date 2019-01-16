@@ -7808,6 +7808,101 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_d1aCMBk1EemE6J9gRm3gKQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_bviz0DlLEeOkL67Ja7unaQ",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_guSt8JzYEeK_Lq_Tgq3rQw",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_YsoccDlLEeOkL67Ja7unaQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_YsoccDlLEeOkL67Ja7unaQ - aaa",
+    "version" : "Latest",
+    "type" : "query"
+  }, {
+    "id" : "DQTechnical",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "DataMasking",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "DataOperation",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "DataQuality",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "DataQualityDependencies",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "DqStringHandling",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "Mathematical",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "Numeric",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "Relational",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "SQLike",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "StringHandling",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "TalendDataGenerator",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "TalendDate",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "TalendString",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "TalendStringUtil",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "externalValidationCompleted",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "regexUtilitiesCompleted",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "validationCompleted",
+    "version" : "Latest",
+    "type" : "routine"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_dBcgEAJiEeO-7JR5SX3TCQ",
     "version" : "0.1",
     "type" : "job"
