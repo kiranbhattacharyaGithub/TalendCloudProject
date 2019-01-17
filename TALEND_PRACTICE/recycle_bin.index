@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin" lastUpdate="2019-01-15T13:39:50.743+0530">
+<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin" lastUpdate="2019-01-17T13:27:32.664+0530">
   <deletedFolders>process/Data_Operation/KIRAN</deletedFolders>
   <deletedItems id="_yZN2MBZQEemsb9_x2cIgdg" path="" type="METADATA_CONNECTIONS"/>
   <deletedItems id="_4m2LMBZSEemsb9_x2cIgdg" path="" type="METADATA_CONNECTIONS"/>
+  <deletedItems id="_qMzo0BmaEem_PenGPw2-lg" path="" type="JOBLET"/>
 </recyclebin:RecycleBin>
