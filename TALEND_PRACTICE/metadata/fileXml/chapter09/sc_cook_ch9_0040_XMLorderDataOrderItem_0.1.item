@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <TalendMetadata:XmlFileConnection Encoding="UTF-8" XmlFilePath="C:/cookbookData/chapter9/chapter09_jo_0040_orderData.xml" dataPackage="_s5I6uB8VEemdJesjmi77kA" fileContent="3C3F786D6C2076657273696F6E3D22312E302220656E636F64696E673D2249534F2D383835392D3135223F3E0D0A3C637573746F6D65723E0D0A3C637573746F6D657249643E313C2F637573746F6D657249643E0D0A3C6E616D653E4A6F2052617920536D6974683C2F6E616D653E0D0A3C6167653E32373C2F6167653E0D0A093C6F72646572733E0D0A09093C6F726465723E0D0A0909093C6F726465724E756D6265723E313C2F6F726465724E756D6265723E0D0A0909093C6F72646572446174653E31302F30362F323031333C2F6F72646572446174653E0D0A0909093C6974656D733E0D0A090909093C6974656D3E0D0A09090909093C6974656D4E756D6265723E313C2F6974656D4E756D6265723E0D0A09090909093C70726F647563743E68616D6D65723C2F70726F647563743E0D0A09090909093C6E756D6265723E313C2F6E756D6265723E0D0A09090909093C76616C75653E32302E30303C2F76616C75653E0D0A090909093C2F6974656D3E0D0A090909093C6974656D3E0D0A09090909093C6974656D4E756D6265723E323C2F6974656D4E756D6265723E0D0A09090909093C70726F647563743E7370616E6E65723C2F70726F647563743E0D0A09090909093C6E756D6265723E323C2F6E756D6265723E0D0A09090909093C76616C75653E31302E30303C2F76616C75653E0D0A090909093C2F6974656D3E0D0A0909093C2F6974656D733E0D0A09093C2F6F726465723E0D0A09093C6F726465723E0D0A0909093C6F726465724E756D6265723E323C2F6F726465724E756D6265723E0D0A0909093C6F72646572446174653E31342F30362F323031333C2F6F72646572446174653E0D0A0909093C6974656D733E0D0A090909093C6974656D3E0D0A09090909093C6974656D4E756D6265723E313C2F6974656D4E756D6265723E0D0A09090909093C70726F647563743E68616D6D65723C2F70726F647563743E0D0A09090909093C6E756D6265723E333C2F6E756D6265723E0D0A09090909093C76616C75653E36302E30303C2F76616C75653E0D0A090909093C2F6974656D3E0D0A090909093C6974656D3E0D0A09090909093C6974656D4E756D6265723E323C2F6974656D4E756D6265723E0D0A09090909093C70726F647563743E7370616E6E65723C2F70726F647563743E0D0A09090909093C6E756D6265723E343C2F6E756D6265723E0D0A09090909093C76616C75653E32302E30303C2F76616C75653E0D0A090909093C2F6974656D3E0D0A0909093C2F6974656D733E0D0A09093C2F6F726465723E090D0A093C2F6F72646572733E0D0A3C2F637573746F6D65723E0D0A0D0A0D0A" name="sc_cook_ch9_0040_XMLorderDataOrderItem" xmi:id="_s5I6sR8VEemdJesjmi77kA">
+    <schema AbsoluteXPathQuery="/customer/orders/order/items" LimitBoucle="50" xmi:id="_s5I6sh8VEemdJesjmi77kA">
+      <schemaTargets RelativeXPathQuery="../../../customerId" TagName="customerId" xmi:id="_s5I6sx8VEemdJesjmi77kA"/>
+      <schemaTargets RelativeXPathQuery="../orderNumber" TagName="orderNumber" xmi:id="_s5I6tB8VEemdJesjmi77kA"/>
+      <schemaTargets RelativeXPathQuery="item/product" TagName="product" xmi:id="_s5I6tR8VEemdJesjmi77kA"/>
+      <schemaTargets RelativeXPathQuery="item/number" TagName="number" xmi:id="_s5I6th8VEemdJesjmi77kA"/>
+      <schemaTargets RelativeXPathQuery="item/value" TagName="value" xmi:id="_s5I6tx8VEemdJesjmi77kA"/>
+    </schema>
+  </TalendMetadata:XmlFileConnection>
+  <orgomg.cwm.resource.record:RecordFile dataManager="_s5I6sR8VEemdJesjmi77kA" name="default" xmi:id="_s5I6uB8VEemdJesjmi77kA">
+    <ownedElement id="_E25JwB8VEemdJesjmi77kA" label="metadata" xmi:id="_s5I6uR8VEemdJesjmi77kA" xsi:type="TalendMetadata:MetadataTable">
+      <feature label="customerId" length="1" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_s5I6uh8VEemdJesjmi77kA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="orderNumber" length="1" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_s5I6ux8VEemdJesjmi77kA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="product" length="6" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_s5I6vB8VEemdJesjmi77kA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="number" length="1" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_s5I6vR8VEemdJesjmi77kA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="value" length="5" pattern="&quot;dd-MM-yyyy&quot;" precision="3" talendType="id_Float" xmi:id="_s5I6vh8VEemdJesjmi77kA" xsi:type="TalendMetadata:MetadataColumn"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_97a4dd0e-39f9-4164-ac83-46de68de4326"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>7s8J4iXvEyJhV9YGcwL2Bxpct5dBa23yMR1OGscgKX7Zdk7HtMoekyKKKkl3561mv07ezfKNHiK0
+Y9Jf/N+65Q==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_2c0b32ec-69d1-4415-8bd4-e3667dd6d0ee"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>YzxlA/8c1q6XD/fKY5D6R2fMwb75iY2EHcDYCSFrFhBo1id5YKzCkctiOg4uyhLFDmojeSCxnams
+3Ek7PbCqqQ==</DigestValue></Reference></SignedInfo><SignatureValue>BE1PWGAA29Hei1BFBqcSlagW5ht38pb96Ce4tmXOIKo+snwm3Ph2N3BND7yUi35DXS5SzC4tAgVQ
+ZRRPmJDx8KrSvmdvLc9FIlG7J9MfHhX4Yw1MHruZ9JULc868C9qhJ4EeiekLht49oZ1EiIJKxUG1
+U1ZtUKP15gpjKtaN9IETa39hvl2XKry6HWw7oBDqL6WLq+GXnLnVzD/cWFZh8szo0N9d19+wvvh5
+Og+L9dI9soAlvzOJ0DN+EGyzykziFnWJrVAbPFUAAwRJ0CxPFnQqJOkHTRAgdSYBmaqtLnTSCt9T
+yyXq/x/qi2MgGepGTuHfPqAFxqSGHC9uhIFzOg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
+RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
+LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
+VQQIDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1ImRDEpMCcGA1UEAwwg
+RGVmYXVsdCBjb2RlLXNpZ25pbmcgY2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+ggEKAoIBAQDiCz1II/o6hDUWu/ygxTCT2o/fYxVzPW23AoONQC/Vuiqh0COyLIgaMTjBPmQdTQFq
+rmM5tD64gi4TEQF+Z3iYt3daLdQUfaW9SzaMlY+XVNz5xnMBVDuiSHJSFE9lKnhgbKAHvOeoJo46
+UgWwb1za0WpRckDtjKcntwEK1orZCgrcIo1nDvFXyB5n0KfpLyktEOa0bSHde50MPbvQeB66XlEb
+lhjfs5S9WnAUja9RgqdwqZoI0ss+x/pjkQygDT8f17MktM21HOtg09lJlhMGJckhgD7jUF5tfYGM
+sv/O27g5CToFhxOnutDtsrDw7AkEQIml8KJp97bQLAFlLnh1AgMBAAGjge0wgeowHQYDVR0OBBYE
+FFzdy6ZfpUX8JwkM/SUrqkwLNqWAMB8GA1UdIwQYMBaAFOd9C3L8tYGZxoAr2SzsgnMytaj3MAsG
+A1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAJBgNVHRMEAjAAMHsGCWCGSAGG+EIBDQRu
+FmxEZWZhdWx0IHRoaXJkIHBhcnR5IGNvZGUtc2lnbmluZyBjZXJ0aWZpY2F0ZS4gTm8gY29tbWl0
+bWVudCBpcyBtYWRlIG9uIHRoZSBjb250ZW50IHNpZ25lZCBieSB0aGUgdGhpcmQgcGFydHkwDQYJ
+KoZIhvcNAQELBQADggIBAKzYdnzoFgrRtDLSSzWtwuOrGo5+1RPoDHm/1dlbVnB7oZzUwfRGwZT5
+ser0V7OZyt9wWR8iQ2ka30fHWrNAosNtlIkF88s5YZw7OOIMxR+qYA99BnWLa79DZVIuukI2f5qJ
+Cr9nw6Oygo8CWeNMWhtXcvV4gqROhb2QMBrvWBw9QvNK1XMdtPShfWiXwyPzzRKgwqrN2meXtOY3
+S+MXu6u+RUD9EYeElp9M+9Yp+zRySl5/s+0sbvo7qz369dlsw8XhKXT+s4YQQe3Sx14Kg3SDFXKn
+QcVgycaZMOw4YUxOeP2hKOHnNuOMORfu3qlYkN/0RMGjn6r4PU4+yL276TiWI5b8J06y4leng2as
+r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
+EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
+BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
+6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_2c0b32ec-69d1-4415-8bd4-e3667dd6d0ee" Target="#_97a4dd0e-39f9-4164-ac83-46de68de4326"><Timestamp>2019-01-23 13:49:27</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
