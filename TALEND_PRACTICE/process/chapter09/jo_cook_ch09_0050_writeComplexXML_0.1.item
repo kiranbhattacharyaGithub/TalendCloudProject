@@ -227,7 +227,6 @@
   </node>
   <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="576">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_3"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
     <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
     <elementParameter field="TABLE" name="VALUES">
@@ -247,7 +246,6 @@
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="576" posY="576">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_3"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
@@ -291,7 +289,6 @@
   </node>
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="576" posY="480">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_3"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_lYYkAPqaEeKDQPe2Oj7peg - metadata"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
@@ -370,7 +367,6 @@
   </node>
   <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="576">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHashOutput_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="LINK_WITH" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="LIST" show="false" value=""/>
     <elementParameter field="CLOSED_LIST" name="DATA_WRITE_MODEL" value="MEMORY"/>
@@ -391,7 +387,6 @@
   </node>
   <node componentName="tWriteXMLField" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="864" posY="576">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWriteXMLField_2"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="COLUMN_LIST" name="XMLFIELD" value="orderXML"/>
     <elementParameter field="TABLE" name="ROOT" show="false">
       <elementValue elementRef="PATH" value="/orders"/>
@@ -429,7 +424,9 @@
       <elementValue elementRef="ORDER" value="6"/>
     </elementParameter>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
-    <elementParameter field="TABLE" name="GROUPBYS"/>
+    <elementParameter field="TABLE" name="GROUPBYS">
+      <elementValue elementRef="INPUT_COLUMN" value="customerId"/>
+    </elementParameter>
     <elementParameter field="CHECK" name="REMOVE_HEADER" value="false"/>
     <elementParameter field="CHECK" name="CREATE" show="false" value="true"/>
     <elementParameter field="CHECK" name="CREATE_EMPTY_ELEMENT" value="true"/>
@@ -449,8 +446,7 @@
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="576">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_3"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="&#10;&#10;&#10;&#13;&#10;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="&#10;&#10;&#10;&#13;&#10;System.out.println(input_row.orderXML);&#10;org.w3c.dom.Document customerXML=(org.w3c.dom.Document)globalMap.get(&quot;customerXML&quot;);&#10;XMLUtils.addChildAtPath(customerXML, &quot;/customer&quot;, input_roe.orderXML);&#10;&#10;globalMap.out(&quot;customerXML&quot;,customerXML);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_3">
@@ -754,7 +750,6 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="704">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_2"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;********************** Level 1 - After order added ********************************&quot;);&#10;System.out.println(XMLUtils.DOMToString( (org.w3c.dom.Document) globalMap.get(&quot;customerXML&quot;)));"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -854,11 +849,9 @@
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row9"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFixedFlowInput_3" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_3" target="tJava_2">
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk2"/>
   </connection>
   <connection connectorName="FLOW" label="orderXMLData" lineStyle="0" metaname="orderXMLData" offsetLabelX="0" offsetLabelY="0" source="tMap_3" target="tHashOutput_1">
@@ -880,7 +873,6 @@
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="orderXMLData"/>
   </connection>
   <connection connectorName="FLOW" label="row10" lineStyle="8" metaname="tFileInputDelimited_3" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_3" target="tMap_3">
@@ -902,7 +894,6 @@
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row10"/>
   </connection>
   <connection connectorName="FLOW" label="row7" lineStyle="0" metaname="tHashOutput_1" offsetLabelX="0" offsetLabelY="0" source="tHashOutput_1" target="tWriteXMLField_2">
@@ -924,7 +915,6 @@
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row7"/>
   </connection>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tWriteXMLField_2" offsetLabelX="0" offsetLabelY="0" source="tWriteXMLField_2" target="tJavaRow_3">
@@ -934,7 +924,6 @@
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
   <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tFixedFlowInput_2" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_2" target="tWriteXMLField_1">
@@ -1023,7 +1012,6 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk4"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_6" offsetLabelX="0" offsetLabelY="0" source="tJava_6" target="tFixedFlowInput_3">
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk5"/>
   </connection>
   <subjob>
@@ -1076,13 +1064,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_fb2bc214-5936-4385-a8d3-6aedaea1f272"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Bwl4Z9E/Vh1mVjnQ4faxlECjtO6rRoAZRqofEyT1mVQ/xdsH9d90laLplSwWfKSdGq9PpGed7/pO
-qR5Ne2Hjgg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_14961ca2-b78f-4c5b-bbff-27da5b8f5191"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>tsFjQ55gU9rNcbg5sCn4Cpyjlucw2OW6pN6CT/ROt4G213uUXlKs4NXtlamgUel4NrSQEDU24txD
-XAmyoshfyA==</DigestValue></Reference></SignedInfo><SignatureValue>IA0X3vy3hDB9Gy8fUGGI+h/lNrp323UWNCFHcXC/xtz/ovog9QoqkPBH8YSJj4K8Se1f3CtnP2Dk
-3eq+J4H8nB/j1MQ4s+/W3rAHpZGZSW6v/hG6NwFPfFJ+GqIeYJQyBUV2+7aaP5n30uyzWAR1uQ5+
-sxNqbXSIaZmiOzg3QtUNLxf1U6vzLc3sVu6/R7Mqf9g8Sqam84cuFxd9PZhxVSSfD1XVvhJwlQbv
-1Y3PglGxAK1QYhldVX/ctFb3P3dai26L4PzpGwGIn7mcn5rzatBcFly/YQ38R1cECD7bOrW9Qg8m
-b9EQFfnNx6pjqthxZY4REud5L1QluCkwraMDGg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_d92efb6f-92c0-43c1-b490-71d1ff6288a4"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ovoBymE2pfIVDOufLXjFYne8YPvxhOrF6W8v3WUfNns0c/AXLgt30sZHal1NS8UBDdD9a7aw0Rx3
+cKCyqKIQug==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_3b178178-0519-4378-9114-f7afaf05208f"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>U2+iux/AE2Ka+xmPrMcqJnfqgCbGuwuI1jAvwr0fCj0oC/QuupafJwu0yjvhsg3dwtZ5B+ps0urx
+bgeHAQIT4Q==</DigestValue></Reference></SignedInfo><SignatureValue>sybcqeIA2UWoWzsdLXJIjeQ0xAyuZ0agpOc2LWGxPguHkuG+IsFNX/uRRqIdy4CaRzqokA8sYVxG
+tXGY4IxG/NyXA7sc9Hm4Bv2kEhpH8JOLX904Uw1OXMBhqTQdEdVS9bqXDSXxPWZE83Gmf3eadPvy
+AowSZ30dUWzE32eT+Jhuw30K+UdLMJPf4TYIznMqtPJ8nyCxVsTyJqD1tcbVbNSup/KVAIf8r8S6
+5Bxmp/5L6W7vrhtziHWKWe9UsZzg95UAE1Fo4lf/Beh7LBEBFiJBXbJj4UlXWNsiJIGMl+WnkUeP
+OJ1apyAXVS9e4lWmE3R3xidAolLfQH0G70gBTg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -1106,4 +1094,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_14961ca2-b78f-4c5b-bbff-27da5b8f5191" Target="#_fb2bc214-5936-4385-a8d3-6aedaea1f272"><Timestamp>2019-01-24 07:58:30</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_3b178178-0519-4378-9114-f7afaf05208f" Target="#_d92efb6f-92c0-43c1-b490-71d1ff6288a4"><Timestamp>2019-01-24 08:21:58</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
