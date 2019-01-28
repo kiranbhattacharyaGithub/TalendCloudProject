@@ -12857,7 +12857,27 @@
     "version" : "Latest",
     "type" : "context"
   }, {
+    "id" : "DQTechnical",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "DataMasking",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
     "id" : "DataOperation",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "DataQuality",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "DataQualityDependencies",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "DqStringHandling",
     "version" : "Latest",
     "type" : "routine"
   }, {
@@ -12870,6 +12890,10 @@
     "type" : "routine"
   }, {
     "id" : "Relational",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "SQLike",
     "version" : "Latest",
     "type" : "routine"
   }, {
@@ -12889,9 +12913,9 @@
     "version" : "Latest",
     "type" : "routine"
   }, {
-    "id" : "_EM3F0Dm9EeOkL67Ja7unaQ - metadata",
+    "id" : "TalendStringUtil",
     "version" : "Latest",
-    "type" : "schema"
+    "type" : "routine"
   }, {
     "id" : "_LyWr4JyeEeK_Lq_Tgq3rQw - metadata",
     "version" : "Latest",
