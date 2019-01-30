@@ -291,13 +291,14 @@
     <module>jobs/process/KIRAN/DataOperation_Jobs/JCL_NW18/jlc_nw18_nob_0.1</module>
     <module>jobs/process/KIRAN/UBK20/Load/ubk_20_api_cntct_address_copy_2.0</module>
     <module>jobs/process/KIRAN/Eloqua/cdointodatabase_0.1</module>
+    <module>jobs/process/RMDM/process/CAS_Object/rmdm_cas_main_job_0.2</module>
   </modules>
   <properties>
     <talend.project.name>TALEND_PRACTICE</talend.project.name>
     <encoding>UTF-8</encoding>
     <talend.version>7.1.1</talend.version>
-    <maven.deploy.skip>true</maven.deploy.skip>
     <talend.docker.tag>${project.version}</talend.docker.tag>
+    <maven.deploy.skip>true</maven.deploy.skip>
     <talend.docker.name>${talend.project.name.lowercase}/${talend.job.folder}%a</talend.docker.name>
   </properties>
   <build>
