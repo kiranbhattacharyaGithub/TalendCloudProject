@@ -1,2 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin" lastUpdate="2019-01-17T13:31:33.951+0530"/>
+<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin" lastUpdate="2019-01-30T13:43:06.249+0530">
+  <deletedFolders>process/Data_Operation/DataOperation_Jobs/JLCNW18_PostShow</deletedFolders>
+  <deletedFolders>process/Data_Operation/DataOperation_Jobs/JCL_NW18</deletedFolders>
+  <deletedFolders>process/Data_Operation/DataOperation_Jobs/ABX_Expo_2018</deletedFolders>
+  <deletedFolders>process/Data_Operation/DataOperation_Jobs</deletedFolders>
+  <deletedFolders>process/Data_Operation</deletedFolders>
+  <deletedItems id="_K5dKQBigEemQMfPQgBV7eA" path="Data_Operation/DataOperation_Jobs/JCL_NW18" type="PROCESS"/>
+</recyclebin:RecycleBin>
