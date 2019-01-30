@@ -237,13 +237,68 @@
     <module>jobs/process/chapter08/jo_cook_ch08_0120_multiplefiles_0.1</module>
     <module>jobs/process/chapter08/jo_cook_ch08_0130_controlfile_0.1</module>
     <module>jobs/process/chapter08/jo_cook_ch08_0140_filesfrominputdata_0.1</module>
+    <module>jobs/process/KIRAN/Eloqua/eloquabaseurl_0.1</module>
+    <module>jobs/process/KIRAN/UBK20/Load/ubk_20_api_cntct_email_copy_3.0</module>
+    <module>jobs/process/KIRAN/DataOperation_Jobs/ABX_Expo_2018/abx_expo_static_0.1</module>
+    <module>jobs/process/KIRAN/UBK20/Load/ubk_20_api_cntct_profile_copy_3.0</module>
+    <module>jobs/process/KIRAN/DataOperation_Jobs/JCL_NW18/jlcnw18_bau_final_0.1</module>
+    <module>jobs/process/KIRAN/UBK20/Load/ubk_20_api_cntct_fax_copy_2.0</module>
+    <module>jobs/process/KIRAN/UBK20/Load/ubk_20_api_orgn_data_copy_2.0</module>
+    <module>jobs/process/KIRAN/DataOperation_Jobs/ABX_Expo_2018/abx18_interest_0.1</module>
+    <module>jobs/process/KIRAN/DataOperation_Jobs/ABX_Expo_2018/abx_final_0.1</module>
+    <module>jobs/process/KIRAN/DataOperation_Jobs/JCL_NW18/jlc_visitortype_0.1</module>
+    <module>jobs/process/KIRAN/UBK20/Extraction/ubk_to_account_csv__k_0.1</module>
+    <module>jobs/process/KIRAN/UBK20/Extraction/ubk20_ext_mst_seq_k_0.1</module>
+    <module>jobs/process/KIRAN/DataOperation_Jobs/PostShow/jlcnw18_bau_final_copy_0.1</module>
+    <module>jobs/process/KIRAN/UBK20/Extraction/ubk_20_api_listofaccounts_k_0.2</module>
+    <module>jobs/process/KIRAN/DataOperation_Jobs/ABX_Expo_2018/abx18_nob_0.1</module>
+    <module>jobs/process/KIRAN/UBK20/Extraction/ubk20_to_commpreferences_k_0.1</module>
+    <module>jobs/process/KIRAN/UBK20/Load/ubk_20_api_cntct_prod_prch_copy_2.1</module>
+    <module>jobs/process/KIRAN/UBK20/Load/ubk_20_api_cntct_sessn_hstry_copy_2.1</module>
+    <module>jobs/process/KIRAN/UBK20/Extraction/ubk20_to_comm_channel_pref_k_0.1</module>
+    <module>jobs/process/KIRAN/DataOperation_Jobs/JCL_NW18/testjob_0.1</module>
+    <module>jobs/process/KIRAN/UBK20/Load/ubk_20_api_cntct_org_rel_data_copy_0.4</module>
+    <module>jobs/process/KIRAN/UBK20/Jobs_SEQUENCE/master_job_0.1</module>
+    <module>jobs/process/KIRAN/UBK20/Cleanup/cleanup_ubk_phone_data_k_2.0</module>
+    <module>jobs/process/KIRAN/DataOperation_Jobs/ABX_Expo_2018/copy_of_abx_expo_static_0.1</module>
+    <module>jobs/process/KIRAN/DataOperation_Jobs/PostShow/demog_jlcnw18_xxxx_bau_copy_copy_0.1</module>
+    <module>jobs/process/KIRAN/DataOperation_Jobs/ABX_Expo_2018/abx_sequence_0.1</module>
+    <module>jobs/process/KIRAN/DataOperation_Jobs/ABX_Expo_2018/dynamicque_xxxx_bau_demog_0.1</module>
+    <module>jobs/process/KIRAN/Eloqua/fetchcdolists_0.1</module>
+    <module>jobs/process/KIRAN/UBK20/Cleanup/cleanup_ubk_order_k_3.0</module>
+    <module>jobs/process/KIRAN/UBK20/Extraction/ubk20_to_order_csv_k_0.1</module>
+    <module>jobs/process/KIRAN/UBK20/Load/ubk_20_api_cntct_channel_pref_copy_3.0</module>
+    <module>jobs/process/KIRAN/DataOperation_Jobs/JCL_NW18/jlc_nw18_static_0.1</module>
+    <module>jobs/process/KIRAN/UBK20/Jobs_SEQUENCE/ubk20_load_seq_k_0.1</module>
+    <module>jobs/process/KIRAN/DataOperation_Jobs/PostShow/jlc_interest_copy_0.1</module>
+    <module>jobs/process/KIRAN/DataOperation_Jobs/PostShow/jlc_nw18_static_copy_0.1</module>
+    <module>jobs/process/KIRAN/timesheet_0.1</module>
+    <module>jobs/process/KIRAN/UBK20/Extraction/ubk20_to_comm_k_0.1</module>
+    <module>jobs/process/KIRAN/DataOperation_Jobs/JCL_NW18/demog_jlcnw18_xxxx_bau_copy_0.1</module>
+    <module>jobs/process/KIRAN/UBK20/Extraction/ubk20_to_order_item_k_0.1</module>
+    <module>jobs/process/KIRAN/UBK20/Extraction/ubk_to_account_contact_relation_k_0.1</module>
+    <module>jobs/process/KIRAN/DataOperation_Jobs/JCL_NW18/jlc_interest_0.1</module>
+    <module>jobs/process/KIRAN/DataOperation_Jobs/PostShow/jlc_jobs_sequence_copy_0.1</module>
+    <module>jobs/process/KIRAN/DataOperation_Jobs/JCL_NW18/jlc_jobs_sequence_0.1</module>
+    <module>jobs/process/KIRAN/DataOperation_Jobs/PostShow/jlc_nw18_nob_copy_0.1</module>
+    <module>jobs/process/KIRAN/DataOperation_Jobs/PostShow/jlc_visitortype_copy_0.1</module>
+    <module>jobs/process/KIRAN/UBK20/Load/ubk_20_api_cntct_communication_pref_copy_3.0</module>
+    <module>jobs/process/KIRAN/UBK20/Cleanup/cleanup_ubk_fax_data_k_2.0</module>
+    <module>jobs/process/KIRAN/DataOperation_Jobs/test_0.1</module>
+    <module>jobs/process/KIRAN/UBK20/Jobs_SEQUENCE/ubk20_cleanup_seq_k_0.1</module>
+    <module>jobs/process/KIRAN/Eloqua/cdosintojsonformat_0.1</module>
+    <module>jobs/process/KIRAN/UBK20/Cleanup/cleanup_ubk_email_data_k_3.0</module>
+    <module>jobs/process/KIRAN/UBK20/Load/ubk_20_api_cntct_phone_copy_2.0</module>
+    <module>jobs/process/KIRAN/DataOperation_Jobs/JCL_NW18/jlc_nw18_nob_0.1</module>
+    <module>jobs/process/KIRAN/UBK20/Load/ubk_20_api_cntct_address_copy_2.0</module>
+    <module>jobs/process/KIRAN/Eloqua/cdointodatabase_0.1</module>
   </modules>
   <properties>
     <talend.project.name>TALEND_PRACTICE</talend.project.name>
     <encoding>UTF-8</encoding>
     <talend.version>7.1.1</talend.version>
-    <maven.deploy.skip>true</maven.deploy.skip>
     <talend.docker.tag>${project.version}</talend.docker.tag>
+    <maven.deploy.skip>true</maven.deploy.skip>
     <talend.docker.name>${talend.project.name.lowercase}/${talend.job.folder}%a</talend.docker.name>
   </properties>
   <build>
