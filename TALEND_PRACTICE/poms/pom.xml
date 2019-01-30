@@ -204,7 +204,6 @@
     <module>jobs/process/Data_Operation/DataOperation_Jobs/JLCNW18_PostShow/jlc_visitortype_copy_0.1</module>
     <module>jobs/process/Data_Operation/DataOperation_Jobs/JLCNW18_PostShow/jlcnw18_bau_final_copy_0.1</module>
     <module>jobs/process/Data_Operation/DataOperation_Jobs/test_0.1</module>
-    <module>jobs/process/Data_Operation/DataOperation_Jobs/JCL_NW18/test_subjobs_0.1</module>
     <module>jobs/process/chapter07/jo_cook_ch07_0100_tablemanagement_0.1</module>
     <module>jobs/process/chapter09Completed/chapter08/jo_cook_ch08_0010_fileappend_0.1</module>
     <module>jobs/process/chapter09Completed/chapter08/jo_cook_ch08_0020_readregexdata_0.1</module>
@@ -297,8 +296,8 @@
     <talend.project.name>TALEND_PRACTICE</talend.project.name>
     <encoding>UTF-8</encoding>
     <talend.version>7.1.1</talend.version>
-    <talend.docker.tag>${project.version}</talend.docker.tag>
     <maven.deploy.skip>true</maven.deploy.skip>
+    <talend.docker.tag>${project.version}</talend.docker.tag>
     <talend.docker.name>${talend.project.name.lowercase}/${talend.job.folder}%a</talend.docker.name>
   </properties>
   <build>
